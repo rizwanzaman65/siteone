@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Professional Web, SEO & Design Services | Web Expertizo
+    </title>
+  
+    <meta name="description" content="Web Expertizo offers professional web development, SEO, and graphic design services, specializing in custom websites, WordPress, Shopify, and SEO optimization to help businesses succeed online.">
+  <meta name="keywords" content="Web development, SEO services, graphic design, custom websites, WordPress development, Shopify store development, SEO optimization, professional web design, Web Expertizo">
+  
+
+  <!-- Favicons -->
+  <link href="assets/img/fav.svg" rel="icon">
+  <link href="assets/img/fav.svg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+
+
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    @media (max-width: 767.98px) {
+
+      /* Adjust the max-width value as needed for your definition of mobile */
+      #btn-remove {
+        display: none;
+        /* Hides the button */
+      }
+    }
+  </style>
+
+
+
+<style>
+  @keyframes blinker {
+    50% { opacity: 0; }
+  }
+</style>
+
+
+
+<style>
+  /* Gradient Animation */
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Wave Text Animation */
+  @keyframes wave {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Image Movement Animation - Adjusted for left/right movement */
+  @keyframes moveImage {
+    0% {
+      transform: translate(-20px, 0); /* Start slightly left */
+    }
+    25% {
+      transform: translate(20px, -5px); /* Move right and up */
+    }
+    50% {
+      transform: translate(0, 0); /* Center position */
+    }
+    75% {
+      transform: translate(-20px, 5px); /* Move left and down */
+    }
+    100% {
+      transform: translate(0, 0); /* Return to center */
+    }
+  }
+
+  /* Web Agency Title */
+  .web-agency-title {
+    position: relative;
+    font-size: 3rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #F3F9FF; /* Swapped color */
+    display: inline-block; /* Ensures the text is inline for the animation */
+    animation: wave 1.5s ease-in-out infinite;
+  }
+
+  /* Wave Background */
+  .wave-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #004AAD, #FFFFFF);
+    opacity: 0.5;
+    overflow: hidden;
+    z-index: 0; /* Ensure it stays behind the text */
+  }
+
+  /* Wave Shape with #F3F9FF Bubbles */
+  .wave-background::before {
+    content: '';
+    position: absolute;
+    width: 200%; /* Double width for seamless animation */
+    height: 150%; /* Increased height to allow full overlap */
+    bottom: -20%; /* Adjusted to position the bubbles off-screen */
+    left: 0; /* Centered position */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><defs><radialGradient id="bubbleGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%"><stop offset="0%" style="stop-color:%23F3F9FF;stop-opacity:0.8"/><stop offset="100%" style="stop-color:%23F3F9FF;stop-opacity:1"/></radialGradient></defs><circle cx="150" cy="100" r="80" fill="url(%23bubbleGrad)" /><circle cx="300" cy="200" r="120" fill="url(%23bubbleGrad)" /><circle cx="450" cy="150" r="90" fill="url(%23bubbleGrad)" /><circle cx="600" cy="250" r="110" fill="url(%23bubbleGrad)" /><circle cx="750" cy="120" r="130" fill="url(%23bubbleGrad)" /><circle cx="900" cy="200" r="150" fill="url(%23bubbleGrad)" /><circle cx="1050" cy="100" r="70" fill="url(%23bubbleGrad)" /><circle cx="1200" cy="240" r="100" fill="url(%23bubbleGrad)" /><circle cx="1350" cy="180" r="110" fill="url(%23bubbleGrad)" /></svg>') repeat;
+    animation: wave 2s linear infinite; /* Animate the wave */
+  }
+
+  /* Moving Image */
+  .moving-image {
+    position: relative;
+    animation: moveImage 2s ease-in-out infinite; /* Adjust duration and timing as needed */
+  }
+
+  /* Bubble Movement Animation */
+  @keyframes moveBubbles {
+    0% {
+      transform: translate(-50%, -50%) translateY(0);
+    }
+    100% {
+      transform: translate(-50%, -50%) translateY(-10px);
+    }
+  }
+
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    /* Adjust the wave background for mobile */
+    .wave-background::before {
+      height: 100%; /* Ensure it covers full height */
+      bottom: 0; /* Align to the bottom */
+    }
+
+    /* Adjust the radius of circles for better fit */
+    .wave-background::before {
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 160"><defs><radialGradient id="bubbleGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%"><stop offset="0%" style="stop-color:%23F3F9FF;stop-opacity:0.8"/><stop offset="100%" style="stop-color:%23F3F9FF;stop-opacity:1"/></radialGradient></defs><circle cx="75" cy="50" r="40" fill="url(%23bubbleGrad)" /><circle cx="150" cy="100" r="60" fill="url(%23bubbleGrad)" /><circle cx="225" cy="75" r="45" fill="url(%23bubbleGrad)" /><circle cx="300" cy="125" r="55" fill="url(%23bubbleGrad)" /><circle cx="375" cy="60" r="65" fill="url(%23bubbleGrad)" /><circle cx="450" cy="100" r="75" fill="url(%23bubbleGrad)" /><circle cx="525" cy="50" r="35" fill="url(%23bubbleGrad)" /><circle cx="600" cy="120" r="50" fill="url(%23bubbleGrad)" /><circle cx="675" cy="90" r="55" fill="url(%23bubbleGrad)" /></svg>') repeat;
+    }
+  }
+</style>
+
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/Web Expertizo.svg" alt="Web Expertizo">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="About-Us">About Us</a></li>
+          <li class="dropdown">
+            <a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Custom-Web-Development">Custom Web Development</a></li>
+              <li><a href="WordPress-Development">WordPress Development</a></li>
+              <li><a href="Shopify-Store-Development">Shopify Store Development</a></li>
+              <li><a href="SEO-Optimization">SEO Optimization</a></li>
+              <li><a href="Graphic-Design">Graphic Design</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="dropdown">
+            <a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="websites">websites</a></li>
+              <li><a href="Logos">Logos</a></li>
+              <li><a href="business-cards">Business cards</a></li>
+              <li><a href="Branding">Branding</a></li>
+             
+            </ul>
+          </li>
+
+          <li><a href="Testimonials">Testimonials</a></li>
+          <li><a href="Contact-Us">Contact Us</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+
+      <a href="Contact-Us" class="btn-getstarted" id="btn-remove">
+        <span class="jumping-text">
+          <span class="letter">G</span>
+          <span class="letter">e</span>
+          <span class="letter">t</span>
+          <span class="letter">&nbsp;</span>
+          <span class="letter">S</span>
+          <span class="letter">t</span>
+          <span class="letter">a</span>
+          <span class="letter">r</span>
+          <span class="letter">t</span>
+          <span class="letter">e</span>
+          <span class="letter">d</span>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+<!-- Page Title -->
+<div class="page-title" style="position: relative; overflow: hidden;">
+  <div class="wave-background"></div> <!-- Background Wave Layer -->
+  <div class="container">
+    <h1 class="web-agency-title" style="color: gray;">Logos</h1>
+    <center>
+        <h5>
+            <b>Creating unique and memorable logos that perfectly represent your brand identity.</b>
+        </h5>
+    </center>
+    <nav class="breadcrumbs">
+        <ol>
+            <li><a href="/">Web Expertizo</a></li>
+            <li class="current">Logos</li>
+        </ol>
+    </nav>
+</div>
+
+</div>
+
+
+
+
+
+<center>
+    <section id="portfolio" class="portfolio-section container">
+       
+        
+      
+  
+  
+  <div class="tab-content" id="portfolioTabContent">
+      <div class="tab-pane fade show active" id="logo-design" role="tabpanel" aria-labelledby="logo-design-tab">
+          <div class="row mt-4 justify-content-center">
+              <!-- Initially visible logo images -->
+         
+
+              <div class="col-md-4 mb-4">
+                <div class="logo-container">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-081.webp">
+                        <img src="images/Logo/webexpertizo-logo-081.webp" alt="Logo Design 81">
+                    </a>
+                </div>
+            </div>
+           
+
+            
+          
+            <div class="col-md-4 mb-4">
+                <div class="logo-container">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-084.webp">
+                        <img src="images/Logo/webexpertizo-logo-084.webp" alt="Logo Design 84">
+                    </a>
+                </div>
+            </div>
+           
+
+
+
+
+
+            <div class="col-md-4 mb-4">
+                <div class="logo-container">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-083.webp">
+                        <img src="images/Logo/webexpertizo-logo-083.webp" alt="Logo Design 83">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="logo-container">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-010.webp">
+                        <img src="images/Logo/webexpertizo-logo-010.webp" alt="Logo Design 10">
+                    </a>
+                </div>
+            </div>
+        
+
+
+            <div class="col-md-4 mb-4">
+                <div class="logo-container">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-080.webp">
+                        <img src="images/Logo/webexpertizo-logo-080.webp" alt="Logo Design 80">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="logo-container">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-054.webp">
+                        <img src="images/Logo/webexpertizo-logo-054.webp" alt="Logo Design 54">
+                    </a>
+                </div>
+            </div>
+              
+
+
+            <div class="col-md-4 mb-4">
+
+                <div class="logo-container">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-014.webp">
+                        <img src="images/Logo/webexpertizo-logo-014.webp" alt="Logo Design 14">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="logo-container">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-015.webp">
+                        <img src="images/Logo/webexpertizo-logo-015.webp" alt="Logo Design 15">
+                    </a>
+                </div>
+            </div>
+  
+
+
+
+            <div class="col-md-4 mb-4">
+                <div class="logo-container">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-017.webp">
+                        <img src="images/Logo/webexpertizo-logo-017.webp" alt="Logo Design 17">
+                    </a>
+                </div>
+            </div>
+              <!-- Additional cards that are initially hidden -->
+            
+           
+  
+  
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-012.webp">
+                          <img src="images/Logo/webexpertizo-logo-012.webp" alt="Logo Design 12">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-013.webp">
+                          <img src="images/Logo/webexpertizo-logo-013.webp" alt="Logo Design 13">
+                      </a>
+                  </div>
+              </div>
+            
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-016.webp">
+                          <img src="images/Logo/webexpertizo-logo-016.webp" alt="Logo Design 16">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-017.webp">
+                          <img src="images/Logo/webexpertizo-logo-017.webp" alt="Logo Design 17">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-018.webp">
+                          <img src="images/Logo/webexpertizo-logo-018.webp" alt="Logo Design 18">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-019.webp">
+                          <img src="images/Logo/webexpertizo-logo-019.webp" alt="Logo Design 19">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-020.webp">
+                          <img src="images/Logo/webexpertizo-logo-020.webp" alt="Logo Design 20">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-021.webp">
+                          <img src="images/Logo/webexpertizo-logo-021.webp" alt="Logo Design 21">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-022.webp">
+                          <img src="images/Logo/webexpertizo-logo-022.webp" alt="Logo Design 22">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-023.webp">
+                          <img src="images/Logo/webexpertizo-logo-023.webp" alt="Logo Design 23">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-024.webp">
+                          <img src="images/Logo/webexpertizo-logo-024.webp" alt="Logo Design 24">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-025.webp">
+                          <img src="images/Logo/webexpertizo-logo-025.webp" alt="Logo Design 25">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-026.webp">
+                          <img src="images/Logo/webexpertizo-logo-026.webp" alt="Logo Design 26">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-027.webp">
+                          <img src="images/Logo/webexpertizo-logo-027.webp" alt="Logo Design 27">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-028.webp">
+                          <img src="images/Logo/webexpertizo-logo-028.webp" alt="Logo Design 28">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-029.webp">
+                          <img src="images/Logo/webexpertizo-logo-029.webp" alt="Logo Design 29">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-030.webp">
+                          <img src="images/Logo/webexpertizo-logo-030.webp" alt="Logo Design 30">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-031.webp">
+                          <img src="images/Logo/webexpertizo-logo-031.webp" alt="Logo Design 31">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-032.webp">
+                          <img src="images/Logo/webexpertizo-logo-032.webp" alt="Logo Design 32">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-033.webp">
+                          <img src="images/Logo/webexpertizo-logo-033.webp" alt="Logo Design 33">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-034.webp">
+                          <img src="images/Logo/webexpertizo-logo-034.webp" alt="Logo Design 34">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-035.webp">
+                          <img src="images/Logo/webexpertizo-logo-035.webp" alt="Logo Design 35">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-036.webp">
+                          <img src="images/Logo/webexpertizo-logo-036.webp" alt="Logo Design 36">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-037.webp">
+                          <img src="images/Logo/webexpertizo-logo-037.webp" alt="Logo Design 37">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-038.webp">
+                          <img src="images/Logo/webexpertizo-logo-038.webp" alt="Logo Design 38">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-039.webp">
+                          <img src="images/Logo/webexpertizo-logo-039.webp" alt="Logo Design 39">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-040.webp">
+                          <img src="images/Logo/webexpertizo-logo-040.webp" alt="Logo Design 40">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-041.webp">
+                          <img src="images/Logo/webexpertizo-logo-041.webp" alt="Logo Design 41">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-042.webp">
+                          <img src="images/Logo/webexpertizo-logo-042.webp" alt="Logo Design 42">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-043.webp">
+                          <img src="images/Logo/webexpertizo-logo-043.webp" alt="Logo Design 43">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-044.webp">
+                          <img src="images/Logo/webexpertizo-logo-044.webp" alt="Logo Design 44">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-045.webp">
+                          <img src="images/Logo/webexpertizo-logo-045.webp" alt="Logo Design 45">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-046.webp">
+                          <img src="images/Logo/webexpertizo-logo-046.webp" alt="Logo Design 46">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-047.webp">
+                          <img src="images/Logo/webexpertizo-logo-047.webp" alt="Logo Design 47">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-048.webp">
+                          <img src="images/Logo/webexpertizo-logo-048.webp" alt="Logo Design 48">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-049.webp">
+                          <img src="images/Logo/webexpertizo-logo-049.webp" alt="Logo Design 49">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-050.webp">
+                          <img src="images/Logo/webexpertizo-logo-050.webp" alt="Logo Design 50">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-051.webp">
+                          <img src="images/Logo/webexpertizo-logo-051.webp" alt="Logo Design 51">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-052.webp">
+                          <img src="images/Logo/webexpertizo-logo-052.webp" alt="Logo Design 52">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-053.webp">
+                          <img src="images/Logo/webexpertizo-logo-053.webp" alt="Logo Design 53">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-054.webp">
+                          <img src="images/Logo/webexpertizo-logo-054.webp" alt="Logo Design 54">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-055.webp">
+                          <img src="images/Logo/webexpertizo-logo-055.webp" alt="Logo Design 55">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-056.webp">
+                          <img src="images/Logo/webexpertizo-logo-056.webp" alt="Logo Design 56">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-057.webp">
+                          <img src="images/Logo/webexpertizo-logo-057.webp" alt="Logo Design 57">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-058.webp">
+                          <img src="images/Logo/webexpertizo-logo-058.webp" alt="Logo Design 58">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-059.webp">
+                          <img src="images/Logo/webexpertizo-logo-059.webp" alt="Logo Design 59">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-060.webp">
+                          <img src="images/Logo/webexpertizo-logo-060.webp" alt="Logo Design 60">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-061.webp">
+                          <img src="images/Logo/webexpertizo-logo-061.webp" alt="Logo Design 61">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-062.webp">
+                          <img src="images/Logo/webexpertizo-logo-062.webp" alt="Logo Design 62">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-063.webp">
+                          <img src="images/Logo/webexpertizo-logo-063.webp" alt="Logo Design 63">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-064.webp">
+                          <img src="images/Logo/webexpertizo-logo-064.webp" alt="Logo Design 64">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-065.webp">
+                          <img src="images/Logo/webexpertizo-logo-065.webp" alt="Logo Design 65">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-066.webp">
+                          <img src="images/Logo/webexpertizo-logo-066.webp" alt="Logo Design 66">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-067.webp">
+                          <img src="images/Logo/webexpertizo-logo-067.webp" alt="Logo Design 67">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-068.webp">
+                          <img src="images/Logo/webexpertizo-logo-068.webp" alt="Logo Design 68">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-069.webp">
+                          <img src="images/Logo/webexpertizo-logo-069.webp" alt="Logo Design 69">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-070.webp">
+                          <img src="images/Logo/webexpertizo-logo-070.webp" alt="Logo Design 70">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-071.webp">
+                          <img src="images/Logo/webexpertizo-logo-071.webp" alt="Logo Design 71">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-072.webp">
+                          <img src="images/Logo/webexpertizo-logo-072.webp" alt="Logo Design 72">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-073.webp">
+                          <img src="images/Logo/webexpertizo-logo-073.webp" alt="Logo Design 73">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-074.webp">
+                          <img src="images/Logo/webexpertizo-logo-074.webp" alt="Logo Design 74">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-075.webp">
+                          <img src="images/Logo/webexpertizo-logo-075.webp" alt="Logo Design 75">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-076.webp">
+                          <img src="images/Logo/webexpertizo-logo-076.webp" alt="Logo Design 76">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-077.webp">
+                          <img src="images/Logo/webexpertizo-logo-077.webp" alt="Logo Design 77">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-078.webp">
+                          <img src="images/Logo/webexpertizo-logo-078.webp" alt="Logo Design 78">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-079.webp">
+                          <img src="images/Logo/webexpertizo-logo-079.webp" alt="Logo Design 79">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-080.webp">
+                          <img src="images/Logo/webexpertizo-logo-080.webp" alt="Logo Design 80">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-081.webp">
+                          <img src="images/Logo/webexpertizo-logo-081.webp" alt="Logo Design 81">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-082.webp">
+                          <img src="images/Logo/webexpertizo-logo-082.webp" alt="Logo Design 82">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-083.webp">
+                          <img src="images/Logo/webexpertizo-logo-083.webp" alt="Logo Design 83">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-084.webp">
+                          <img src="images/Logo/webexpertizo-logo-084.webp" alt="Logo Design 84">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 additional-logo-card mb-4 d-none">
+                  <div class="logo-container">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#fullLogoModal" data-image="images/Logo/webexpertizo-logo-085.webp">
+                          <img src="images/Logo/webexpertizo-logo-085.webp" alt="Logo Design 85">
+                      </a>
+                  </div>
+              </div>
+                                      
+  
+  
+  
+  
+          </div>
+          <!-- Load More Button for Logos -->
+  <div class="text-center">
+      <button id="load-more-logos" class="btn btn-secondary">Load More</button>
+      <p id="remaining-count-logos">Showing 9 of X items. Y remaining.</p>
+  </div>
+      </div>
+  
+    <!-- Modal for displaying full logo image -->
+  <div class="modal fade" id="fullLogoModal" tabindex="-1" aria-labelledby="fullLogoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="fullLogoModalLabel">Web Expertizo Logo Project</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <img id="logo-modal-image" src="" alt="Full Size Logo" class="img-fluid">
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <script>
+ document.addEventListener("DOMContentLoaded",function(){let e=document.getElementById("load-more-logos"),t=document.querySelectorAll(".additional-logo-card"),n=document.getElementById("remaining-count-logos"),o=9;function l(){n.textContent=`Showing ${o} of ${t.length+9} items. ${t.length-(o-9)} remaining.`}l(),e.addEventListener("click",function(){let n=0;for(;o<t.length+9&&n<9;)t[o-9].classList.remove("d-none"),t[o-9].classList.add("show"),o++,n++;l(),o===t.length+9&&(e.style.display="none")});let i=document.getElementById("logo-modal-image"),a=document.querySelectorAll(".logo-container a");a.forEach(e=>{e.addEventListener("click",function(){let e=this.getAttribute("data-image");i.src=e})})});
+  </script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    </section>
+  </center>
+  
+
+
+
+ 
+
+
+
+
+<!-- copy2 -->
+
+    <!-- Call To Action 2 Section -->
+    <section id="call-to-action-2" class="call-to-action-2 section dark-background">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Have Questions? Let’s Talk!</h3>
+              <p>Our team is ready to assist you with your digital needs. Schedule a call with us to discuss how we can help elevate your business. Together, we can create tailored solutions that drive results.</p>
+               
+<!-- Request a Call Button -->
+<a class="cta-btn" href="#" data-bs-toggle="modal" data-bs-target="#requestCallModal">Request a Call</a>
+
+</div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action 2 Section -->
+
+
+<!-- Request a Call Modal -->
+<div class="modal fade" id="requestCallModal" tabindex="-1" aria-labelledby="requestCallModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="requestCallModalLabel" style="color: #004AAD;">Request a Call</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: white;"></button>
+      </div>
+      <div class="modal-body">
+        <form id="requestCallForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="bb822da2-13a6-48fd-8fec-4029bc499a8a">
+          <div class="mb-3">
+            <input type="text" class="form-control" name="name" placeholder="Enter your name" required>
+          </div>
+
+          <div class="mb-3">
+            <input type="tel" class="form-control" name="phone" placeholder="Enter number with country code" required>
+          </div>
+          <center>
+            <button type="submit" class="btn btn-primary" style="background-color: #004AAD; border-color: #004AAD;">Submit Request</button>
+          </center>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Thank You Modal for Request a Call -->
+<div id="thankYouModalRequestCall" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+  <div style="background:white; padding:20px; border-radius:8px; max-width:400px; text-align:center;">
+    <h2 style="color: black;">Thank You!</h2>
+    <p style="color: black;">Thank you for your request. We will call you soon!</p>
+    <button onclick="closeThankYouModalRequestCall()" style="background-color:#004AAD; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Close</button>
+  </div>
+</div>
+
+<script>
+  document.getElementById("requestCallForm").addEventListener("submit",function(e){e.preventDefault(),document.getElementById("thankYouModalRequestCall").style.display="flex";let t=bootstrap.Modal.getInstance(document.getElementById("requestCallModal"));t.hide();let l=e.target;fetch(l.action,{method:l.method,body:new FormData(l)}).then(e=>{e.ok?l.reset():alert("There was a problem submitting your form.")}).catch(e=>{console.error("Error:",e),alert("There was an error submitting your form.")})});function closeThankYouModalRequestCall(){document.getElementById("thankYouModalRequestCall").style.display="none"}
+</script>
+
+  
+
+<!-- Faq Section -->
+<section class="faq-9 faq section light-background" id="faq" style="background-color: var(--background-color);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5" data-aos="fade-up">
+        <h2 class="faq-title">Have a question? Check out the FAQ</h2>
+        <p class="faq-description">For inquiries, please contact us at <a href="mailto:info@webexpertizo.com">info@webexpertizo.com</a>.</p>
+      </div>
+
+      <div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
+        <div class="faq-container">
+          <div class="faq-item">
+            <h3>How can I contact customer support?</h3>
+            <div class="faq-content">
+              <p>You can contact our customer support via email at <a href="mailto:info@webexpertizo.com">info@webexpertizo.com</a>.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+         
+
+          <div class="faq-item">
+            <h3>Do you provide support after the project is completed?</h3>
+            <div class="faq-content">
+              <p>Yes, we offer ongoing support and maintenance packages to ensure your website remains up-to-date and runs smoothly after launch.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>What is your approach to SEO optimization?</h3>
+            <div class="faq-content">
+              <p>We use a combination of on-page and off-page SEO strategies, including keyword research, content optimization, link building, and technical SEO to enhance your website’s visibility and drive organic traffic.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>Can you redesign my existing website?</h3>
+            <div class="faq-content">
+              <p>Absolutely! We can help redesign your existing website to improve its functionality, aesthetics, and user experience while aligning it with modern web standards.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>How do you ensure the security of my website?</h3>
+            <div class="faq-content">
+              <p>We implement best practices for website security, including SSL certificates, regular backups, software updates, and secure hosting environments to protect your website from threats.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <!-- New FAQ Item -->
+          <div class="faq-item">
+            <h3>Can you help with digital marketing?</h3>
+            <div class="faq-content">
+              <p>Yes, we offer digital marketing services that include social media management, email marketing, and online advertising to help promote your business effectively.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Faq Section -->
+
+
+
+
+
+
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2 style="color: black;">Testimonials</h2>
+          <p style="color: black;"> Our clients consistently express satisfaction with our services. We pride ourselves on delivering exceptional quality and support, ensuring their online presence thrives in today’s competitive digital landscape.    </p>
+        </div><!-- End Section Title -->
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+      
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Ali Khan</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The team transformed my bakery’s online presence. The beautiful website has brought in many new customers!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Mary Smith</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The attention to detail and creative design made my floral business stand out online. Highly recommended!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Omar Farooq</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The website built by this team has transformed my business, resulting in a remarkable increase in sales!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Akira Tanaka</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The team helped us create a stunning online presence. Our orders have skyrocketed since launching the new site!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Fatima Al-Hassan</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The professionalism and quality of service were top-notch. My crafts business now shines online!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>David Johnson</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The website has improved my visibility and customer engagement tremendously. Highly satisfied!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Sara Hussain</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Thanks to the team's efforts, my bookstore’s online visibility has improved tremendously. User-friendly and visually appealing!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>John Doe</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The quality of the website design and the team's support has been exceptional. I highly recommend their services!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Maria Lopez</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Our online store's performance has greatly improved. The team’s creativity and support are commendable!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+      
+        </div>
+      
+      </section><!-- /Testimonials Section -->
+      
+      <!-- Contact Section -->
+      <section id="contact" class="contact section light-background">
+      
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact Us</h2>
+          <p>We’re here to help you elevate your online presence and achieve your goals.</p>
+        </div><!-- End Section Title -->
+      
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+      
+      
+    <div class="row g-4 g-lg-5">
+      <div class="col-lg-5">
+        <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+            <h3>Contact Info</h3>
+            <p>Your success is our mission. Feel free to reach out to us with any inquiries.</p>
+    
+            <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                    <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                    <h4>Our Location</h4>
+                <p>    Office No 207, Balad Trade Centre, Alamgir Road Bahadurabad, <br> Karachi, Pakistan.
+                </p> </div>
+            </div>
+    
+            <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                    <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                    <h4>Phone Number</h4>
+                    <p>+92 321 2275843</p>
+                </div>
+            </div>
+    
+            <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                    <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                    <h4>Email Address</h4>
+                    <p>info@webexpertizo.com</p>
+                    <p>sales@webexpertizo.com</p>
+                </div>
+            </div>
+    
+            <!-- Separate section for CEO contact details -->
+            <div class="info-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="icon-box">
+                    <i class="bi bi-person-circle"></i>
+                </div>
+                <div class="content">
+                    <h4>CEO & Founder</h4>
+                    <p>Name: M. Rizwan</p>
+                    <p>Phone: +92 333 6623823</p>
+                    <p>Email: rizwan@webexpertizo.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- Submission Modal -->
+<div id="submissionModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+  <div style="background:white; padding:20px; border-radius:8px; max-width:400px; text-align:center;">
+    <h2 style="color: #004AAD;">Thank You!</h2>
+    <p style="color: black;">
+
+      Thank you for your interest. We will get back to you soon!</p>
+    <button onclick="closeSubmissionModal()" style="background-color:#004AAD; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Close</button>
+  </div>
+</div>
+
+<div class="col-lg-7">
+  <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+    <h3>Get In Touch</h3>
+    <p>We'd love to hear from you! Share your ideas, questions, or feedback.</p>
+
+    <form id="rizform" action="https://api.web3forms.com/submit" method="post" class="rizwanemail" data-aos="fade-up" data-aos-delay="200">
+      <input type="hidden" name="access_key" value="bb822da2-13a6-48fd-8fec-4029bc499a8a">
+      <div class="row gy-4">
+        <div class="col-md-6">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="col-12">
+          <input type="text" class="form-control" name="service" placeholder="Service" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn">Send Message</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  document.getElementById("rizform").addEventListener("submit",function(e){e.preventDefault(),document.getElementById("submissionModal").style.display="flex";let t=e.target;fetch(t.action,{method:t.method,body:new FormData(t)}).then(e=>{e.ok?(t.reset(),console.log("Form submitted successfully")):alert("There was a problem submitting your form.")}).catch(e=>{console.error("Error:",e),alert("There was an error submitting your form.")})});function closeSubmissionModal(){document.getElementById("submissionModal").style.display="none"}
+</script>
+
+
+
+      
+
+    </div>
+      
+        </div>
+      
+      </section><!-- /Contact Section -->
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!-- jQuery UI CSS -->
+      
+      <div class="bubbles_wrap">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+        <div class="bubble x6"></div>
+        <div class="bubble x7"></div>
+        <div class="bubble x8"></div>
+        <div class="bubble x9"></div>
+        <div class="bubble x10"></div>
+        <div class="bubble x11"></div>
+        <div class="bubble x12"></div>
+        <div class="bubble x13"></div>
+        <div class="bubble x14"></div>
+        <div class="bubble x15"></div>
+        <div class="bubble x16"></div>
+        <div class="bubble x17"></div>
+        <div class="bubble x18"></div>
+        <div class="bubble x19"></div>
+        <div class="bubble x20"></div>
+      </div>
+
+  </main>
+
+
+
+
+
+  <footer id="footer" class="footer dark-background"> 
+<br><br>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+  
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="/" class="logo d-flex align-items-center">
+              <span class="sitename"><img src="assets/img/Web Expertizo.svg" alt=""></span>
+            </a>
+            <p>At Web Expertizo, we deliver customized digital solutions to help businesses enhance their online presence and achieve success through innovative technology and strategies.</p>
+            <div class="social-links d-flex mt-4">
+              <a href="https://x.com/?lang=en"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+              <a href="linkedin.com"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+  
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+                <li><i class="bi bi-chevron-right"></i> <a href="/" style="color: black;">Home</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="About-Us" style="color: black;">About Us</a></li>
+                <li><i class="bi bi-chevron-right"></i> 
+                    <a href="#" style="color: black;" data-bs-toggle="dropdown" aria-expanded="false" class="footerDropdownWebExpertizo">
+                        Portfolio 
+                        <i class="bi bi-chevron-down" style="font-size: 0.8rem;"></i> <!-- This adds the dropdown arrow -->
+                    </a>
+                    <ul class="dropdown-menu footerDropdownWebExpertizo-menu" style="background-color: white; color: #004AAD;">
+                        <li><a class="dropdown-item" href="Websites" style="color: black; padding-top: 20px;" >Websites</a></li>
+                        <li><a class="dropdown-item" href="Logos" style="color: black;">Logos</a></li>
+                        <li><a class="dropdown-item" href="Business-Cards" style="color: black;">Business Cards</a></li>
+                        <li><a class="dropdown-item" href="Branding" style="color: black;">Branding</a></li>
+                    </ul>
+                </li>
+                <li><i class="bi bi-chevron-right"></i> <a href="Testimonials" style="color: black;">Testimonials</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="Contact-Us" style="color: black;">Contact Us</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="Terms&Conditions" style="color: black;">Terms & Conditions</a></li>
+            </ul>
+        </div>
+  
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="Custom-Web-Development" style="color: black;"> Custom Web Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="WordPress-Development" style="color: black;"> WordPress Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="Shopify-Store-Development" style="color: black;"> Shopify Store Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="SEO-Optimization" style="color: black;"> SEO Optimization</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="Graphic-Design" style="color: black;"> Graphic Design</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            
+            <!-- Newsletter Form -->
+            <form action="https://api.web3forms.com/submit" class="webexpertizosub" method="POST" onsubmit="submitNewsletter(event)">
+              <input type="hidden" name="access_key" value="bb822da2-13a6-48fd-8fec-4029bc499a8a">
+              
+              <div class="newsletter-form bi" style="border-color: #004AAD;">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <input type="submit" value="Subscribe">
+              </div>
+              
+              <div class="sent-message" style="display:none;">You have successfully subscribed to our newsletter. We will keep you updated!</div>
+            </form>
+            
+            <!-- Popup Modal -->
+            <div id="thankYouModal1" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+              <div style="background:white; padding:20px; border-radius:8px; max-width:400px; text-align:center;">
+                <h2 style="color: black;">Thank You!</h2>
+                <p style="color: black;">You have successfully subscribed to our newsletter. We will keep you updated!</p>
+                <button onclick="closeModal()" style="background-color:#004AAD; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Close</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- JavaScript function to handle form submission and popup -->
+          <script>
+           function submitNewsletter(e){e.preventDefault();let t=e.target;document.getElementById("thankYouModal1").style.display="flex",fetch(t.action,{method:t.method,body:new FormData(t)}).then(e=>{e.ok?t.reset():alert("There was a problem submitting your form.")}).catch(e=>{console.error("Error:",e),alert("There was an error submitting your form.")})}function closeModal(){document.getElementById("thankYouModal1").style.display="none"}
+          </script>
+          
+          
+  
+        </div>
+      </div>
+    </div>
+  <br>
+    <div class="copyright">
+      <div class="container text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Web Expertizo</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+          Designed by <a href="/">Web Expertizo</a>
+        </div>
+      </div>
+    </div>
+  <br><br>
+  </footer>
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+
+
+  <!-- main hero button -->
+  <script>
+   document.querySelector(".btn-getstarted").addEventListener("mouseenter",function(){this.style.backgroundColor="004AAD",this.style.color="white"}),document.querySelector(".btn-getstarted").addEventListener("mouseleave",function(){this.style.backgroundColor="#004AAD",this.style.color="white"});
+
+  </script>
+
+  
+</body>
+
+</html>

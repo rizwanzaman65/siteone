@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Professional Web, SEO & Design Services | Web Expertizo
+  </title>
+
+  <meta name="description" content="Web Expertizo offers professional web development, SEO, and graphic design services, specializing in custom websites, WordPress, Shopify, and SEO optimization to help businesses succeed online.">
+<meta name="keywords" content="Web development, SEO services, graphic design, custom websites, WordPress development, Shopify store development, SEO optimization, professional web design, Web Expertizo">
+
+
+  <!-- Favicons -->
+  <link href="assets/img/fav.svg" rel="icon">
+  <link href="assets/img/fav.svg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+
+
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    @media (max-width: 767.98px) {
+
+      /* Adjust the max-width value as needed for your definition of mobile */
+      #btn-remove {
+        display: none;
+        /* Hides the button */
+      }
+    }
+  </style>
+<style>
+   .bubbles_wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .bubble {
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    bottom: -5px; /* Start slightly off the bottom of the screen */
+  }
+
+  /* Animation Keyframes */
+  @keyframes animateBubble {
+    0% { bottom: -5px; opacity: 0; } /* Start off the bottom of the screen */
+    20% { opacity: 1; } /* Fade in */
+    100% { bottom: 100vh; opacity: 0; } /* Move up off the screen */
+  }
+
+  @keyframes sideWays {
+    0% { margin-left: 0; }
+    100% { margin-left: 25px; }
+  }
+
+  /* Individual Bubbles with Animations from Bottom to Top */
+  .x1 { animation: animateBubble 12s linear infinite, sideWays 5s ease-in-out infinite alternate; left: 6%; background: #004AAD; }
+  .x2 { animation: animateBubble 13s linear infinite, sideWays 6s ease-in-out infinite alternate; left: 12%; background: #FFD700; }
+  .x3 { animation: animateBubble 11s linear infinite, sideWays 5.5s ease-in-out infinite alternate; left: 18%; background: #004AAD; }
+  .x4 { animation: animateBubble 14s linear infinite, sideWays 5.2s ease-in-out infinite alternate; left: 24%; background: #FF6347; }
+  .x5 { animation: animateBubble 12s linear infinite, sideWays 6s ease-in-out infinite alternate; left: 30%; background: #FF69B4; }
+  .x6 { animation: animateBubble 13s linear infinite, sideWays 5s ease-in-out infinite alternate; left: 36%; background: #00FA9A; }
+  .x7 { animation: animateBubble 15s linear infinite, sideWays 6.5s ease-in-out infinite alternate; left: 42%; background: #004AAD; }
+  .x8 { animation: animateBubble 11s linear infinite, sideWays 5.7s ease-in-out infinite alternate; left: 48%; background: #FFA500; }
+  .x9 { animation: animateBubble 14s linear infinite, sideWays 5.8s ease-in-out infinite alternate; left: 54%; background: #8A2BE2; }
+  .x10 { animation: animateBubble 12s linear infinite, sideWays 5.5s ease-in-out infinite alternate; left: 60%; background: white; }
+  .x11 { animation: animateBubble 13s linear infinite, sideWays 6.2s ease-in-out infinite alternate; left: 66%; background: #004AAD; }
+  .x12 { animation: animateBubble 11s linear infinite, sideWays 5.3s ease-in-out infinite alternate; left: 72%; background: #7FFFD4; }
+  .x13 { animation: animateBubble 14s linear infinite, sideWays 6s ease-in-out infinite alternate; left: 78%; background: #FF4500; }
+  .x14 { animation: animateBubble 12s linear infinite, sideWays 5.6s ease-in-out infinite alternate; left: 84%; background: #004AAD; }
+  .x15 { animation: animateBubble 13s linear infinite, sideWays 6.2s ease-in-out infinite alternate; left: 90%; background: #DA70D6; }
+  .x16 { animation: animateBubble 11s linear infinite, sideWays 5.5s ease-in-out infinite alternate; left: 96%; background: #004AAD; }
+  .x17 { animation: animateBubble 15s linear infinite, sideWays 6s ease-in-out infinite alternate; left: 3%; background: #FF1493; }
+  .x18 { animation: animateBubble 12s linear infinite, sideWays 6s ease-in-out infinite alternate; left: 9%; background: #FFD700; }
+  .x19 { animation: animateBubble 14s linear infinite, sideWays 5.5s ease-in-out infinite alternate; left: 15%; background: #00BFFF; }
+  .x20 { animation: animateBubble 13s linear infinite, sideWays 5.7s ease-in-out infinite alternate; left: 21%; background: #FF6347; }
+
+</style>
+
+
+<style>
+  @keyframes blinker {
+    50% { opacity: 0; }
+  }
+</style>
+
+
+
+<style>
+  /* Gradient Animation */
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Wave Text Animation */
+  @keyframes wave {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Image Movement Animation - Adjusted for left/right movement */
+  @keyframes moveImage {
+    0% {
+      transform: translate(-20px, 0); /* Start slightly left */
+    }
+    25% {
+      transform: translate(20px, -5px); /* Move right and up */
+    }
+    50% {
+      transform: translate(0, 0); /* Center position */
+    }
+    75% {
+      transform: translate(-20px, 5px); /* Move left and down */
+    }
+    100% {
+      transform: translate(0, 0); /* Return to center */
+    }
+  }
+
+  /* Web Agency Title */
+  .web-agency-title {
+    position: relative;
+    font-size: 3rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #F3F9FF; /* Swapped color */
+    display: inline-block; /* Ensures the text is inline for the animation */
+    animation: wave 1.5s ease-in-out infinite;
+  }
+
+  /* Wave Background */
+  .wave-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #004AAD, #FFFFFF);
+    opacity: 0.5;
+    overflow: hidden;
+    z-index: 0; /* Ensure it stays behind the text */
+  }
+
+  /* Wave Shape with #F3F9FF Bubbles */
+  .wave-background::before {
+    content: '';
+    position: absolute;
+    width: 200%; /* Double width for seamless animation */
+    height: 150%; /* Increased height to allow full overlap */
+    bottom: -20%; /* Adjusted to position the bubbles off-screen */
+    left: 0; /* Centered position */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><defs><radialGradient id="bubbleGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%"><stop offset="0%" style="stop-color:%23F3F9FF;stop-opacity:0.8"/><stop offset="100%" style="stop-color:%23F3F9FF;stop-opacity:1"/></radialGradient></defs><circle cx="150" cy="100" r="80" fill="url(%23bubbleGrad)" /><circle cx="300" cy="200" r="120" fill="url(%23bubbleGrad)" /><circle cx="450" cy="150" r="90" fill="url(%23bubbleGrad)" /><circle cx="600" cy="250" r="110" fill="url(%23bubbleGrad)" /><circle cx="750" cy="120" r="130" fill="url(%23bubbleGrad)" /><circle cx="900" cy="200" r="150" fill="url(%23bubbleGrad)" /><circle cx="1050" cy="100" r="70" fill="url(%23bubbleGrad)" /><circle cx="1200" cy="240" r="100" fill="url(%23bubbleGrad)" /><circle cx="1350" cy="180" r="110" fill="url(%23bubbleGrad)" /></svg>') repeat;
+    animation: wave 2s linear infinite; /* Animate the wave */
+  }
+
+  /* Moving Image */
+  .moving-image {
+    position: relative;
+    animation: moveImage 2s ease-in-out infinite; /* Adjust duration and timing as needed */
+  }
+
+  /* Bubble Movement Animation */
+  @keyframes moveBubbles {
+    0% {
+      transform: translate(-50%, -50%) translateY(0);
+    }
+    100% {
+      transform: translate(-50%, -50%) translateY(-10px);
+    }
+  }
+
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    /* Adjust the wave background for mobile */
+    .wave-background::before {
+      height: 100%; /* Ensure it covers full height */
+      bottom: 0; /* Align to the bottom */
+    }
+
+    /* Adjust the radius of circles for better fit */
+    .wave-background::before {
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 160"><defs><radialGradient id="bubbleGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%"><stop offset="0%" style="stop-color:%23F3F9FF;stop-opacity:0.8"/><stop offset="100%" style="stop-color:%23F3F9FF;stop-opacity:1"/></radialGradient></defs><circle cx="75" cy="50" r="40" fill="url(%23bubbleGrad)" /><circle cx="150" cy="100" r="60" fill="url(%23bubbleGrad)" /><circle cx="225" cy="75" r="45" fill="url(%23bubbleGrad)" /><circle cx="300" cy="125" r="55" fill="url(%23bubbleGrad)" /><circle cx="375" cy="60" r="65" fill="url(%23bubbleGrad)" /><circle cx="450" cy="100" r="75" fill="url(%23bubbleGrad)" /><circle cx="525" cy="50" r="35" fill="url(%23bubbleGrad)" /><circle cx="600" cy="120" r="50" fill="url(%23bubbleGrad)" /><circle cx="675" cy="90" r="55" fill="url(%23bubbleGrad)" /></svg>') repeat;
+    }
+  }
+</style>
+<style>
+  .container {
+      margin-top: 30px;
+  }
+
+  .section {
+      margin-bottom: 30px;
+  }
+
+  .section-title {
+      font-weight: bold;
+      font-size: 1.25rem;
+      color: #004AAD;
+      text-align: left;
+      margin-bottom: 10px;
+  }
+
+  .section-content {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-left: 20px;
+  }
+
+  .section-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+  }
+
+  .section-col {
+      font-weight: bold;
+      text-align: left;
+      font-size: 1.2rem;
+      color: #004AAD;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .section-col-content {
+      width: 100%;
+      padding: 10px 20px;
+  }
+
+  /* Refund policy box styling */
+  .refund-policy {
+      margin-top: 20px;
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-radius: 5px;
+  }
+
+  /* Responsive adjustments */
+  @media (min-width: 768px) {
+      .section-col {
+          width: 20%;
+          padding: 10px;
+      }
+      .section-col-content {
+          width: 80%;
+          padding: 10px 20px;
+      }
+  }
+</style>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/Web Expertizo.svg" alt="Web Expertizo">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="About-Us">About Us</a></li>
+          <li class="dropdown">
+            <a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Custom-Web-Development">Custom Web Development</a></li>
+              <li><a href="WordPress-Development">WordPress Development</a></li>
+              <li><a href="Shopify-Store-Development">Shopify Store Development</a></li>
+              <li><a href="SEO-Optimization">SEO Optimization</a></li>
+              <li><a href="Graphic-Design">Graphic Design</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="dropdown">
+            <a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="websites">websites</a></li>
+              <li><a href="Logos">Logos</a></li>
+              <li><a href="business-cards">Business cards</a></li>
+              <li><a href="Branding">Branding</a></li>
+             
+            </ul>
+          </li>
+
+          <li><a href="Testimonials">Testimonials</a></li>
+          <li><a href="Contact-Us">Contact Us</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+
+      <a href="Contact-Us" class="btn-getstarted" id="btn-remove">
+        <span class="jumping-text">
+          <span class="letter">G</span>
+          <span class="letter">e</span>
+          <span class="letter">t</span>
+          <span class="letter">&nbsp;</span>
+          <span class="letter">S</span>
+          <span class="letter">t</span>
+          <span class="letter">a</span>
+          <span class="letter">r</span>
+          <span class="letter">t</span>
+          <span class="letter">e</span>
+          <span class="letter">d</span>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+<!-- Page Title -->
+<div class="page-title" style="position: relative; overflow: hidden;">
+  <div class="wave-background"></div> <!-- Background Wave Layer -->
+  <div class="container">
+      <h1 class="web-agency-title" style="color: gray;">Terms & Conditions</h1>
+      <center>
+        <h5>
+          <p><b>At Web Expertizo, we prioritize transparent communication, trust, and excellence. Our Terms & Conditions outline our commitment to delivering tailored solutions that meet your goals.</b></p>
+  </center>
+      <nav class="breadcrumbs">
+          <ol>
+              <li><a href="/">Web Expertizo</a></li>
+              <li class="current">Terms & Conditions</li>
+          </ol>
+      </nav>
+  </div>
+</div>
+<!-- End Page Title -->
+
+
+<div class="container" style="background-color: #F3F9FF;">
+  <div class="section">
+      <div class="section-row">
+          <div class="section-col">1. Introduction</div>
+          <div class="section-col-content">
+              <p class="section-content">Welcome to Web Expertizo! We are a leading provider of web development, WordPress, Shopify, SEO, and graphic design services. By hiring us for any of our services, you agree to comply with the terms outlined below. These terms are meant to protect both our company and you, ensuring a smooth collaboration and project completion. We value transparency and clarity in every step of our work and seek to offer the best services to help your business succeed in the digital world.</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="section">
+      <div class="section-row">
+          <div class="section-col">2. Services We Provide</div>
+          <div class="section-col-content">
+              <p class="section-content">At Web Expertizo, we offer a wide range of high-quality digital services. Our professional team is ready to provide tailored solutions for your business's online needs. The services include:</p>
+              <ul class="section-content">
+                  <li><b>Custom Web Development:</b> Our web development team works with you to create a custom, responsive, and user-friendly website that meets your business needs. We ensure that your website is optimized for both functionality and design.</li>
+                  <li><b>WordPress Development:</b> With WordPress, we create dynamic, scalable websites that are easy to manage. Our team provides custom theme development, plugin integration, and ongoing support to ensure your site runs smoothly.</li>
+                  <li><b>Shopify Store Development:</b> If you’re looking to create a powerful eCommerce platform, we specialize in building and optimizing Shopify stores. Our team ensures your store is visually appealing, easy to navigate, and optimized for conversions.</li>
+                  <li><b>SEO Optimization:</b> To increase your website's visibility, we offer comprehensive SEO services, including keyword research, on-page optimization, and content strategies to improve search engine rankings and drive organic traffic.</li>
+                  <li><b>Graphic Design:</b> We provide professional graphic design services, creating stunning logos, branding materials, and digital assets that represent your brand effectively across various platforms.</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+
+
+<div class="section">
+    <div class="section-row">
+        <div class="section-col">3. Placing an Order</div>
+        <div class="section-col-content">
+            <p class="section-content">Placing an order with Web Expertizo begins with a clear understanding of your project. We require detailed information from you to ensure that we can meet your specific needs and expectations. This includes understanding your goals, project timelines, and any specific requirements you may have for your website or digital assets.</p>
+            <p class="section-content"><b>Initial Payment:</b> We require a 50% advance payment before starting any project. This allows us to allocate resources and start working on the planning and development of your project. The remaining 50% is due upon completion of the project, prior to delivery of the final work.</p>
+            <p class="section-content">Once the initial payment is received, we will begin working on your project. We will communicate regularly with progress updates, and should any additional requirements arise during the process, we will discuss them with you promptly.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-row">
+        <div class="section-col">4. 100% Refund Policy</div>
+        <div class="section-col-content">
+            <p class="section-content">At Web Expertizo, customer satisfaction is our priority. If for any reason you are not satisfied with the final product or service provided, we offer a 100% refund policy. Below are the key points of our refund guarantee:</p>
+            <div class="refund-policy">
+                <h3 class="section-title">Our 100% Refund Guarantee</h3>
+                <ul class="section-content">
+                    <li><b>Satisfaction Guarantee:</b> If the final product does not meet your expectations or requirements, we will refund the full amount, including your initial deposit.</li>
+                    <li><b>No Questions Asked:</b> We value your business and want you to be happy with the result. If you are not satisfied with the work, we will refund your payment, with no questions asked.</li>
+                    <li><b>Refund Process:</b> To initiate a refund request, please contact us within 15 days of receiving the final deliverable. You must provide feedback explaining why you are dissatisfied, and we will review the issue and proceed with the refund if necessary.</li>
+                    <li><b>Full Refund:</b> If you are not happy with the final deliverable, we will refund you 100% of your payment, including the initial deposit.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-row">
+        <div class="section-col">5. Termination of Services</div>
+        <div class="section-col-content">
+            <p class="section-content">Either party may terminate the services if necessary. If you wish to terminate the project, you must notify us in writing. If the project is canceled before it is completed, you will be responsible for paying for the work done up to that point, based on the hourly rate or agreed-upon milestone payment plan.</p>
+            <p class="section-content">We reserve the right to terminate the project if we feel that there are significant barriers to completing the work as agreed. In such cases, any funds paid for work that has not been completed will be returned to you.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-row">
+        <div class="section-col">6. Confidentiality</div>
+        <div class="section-col-content">
+            <p class="section-content">We take the confidentiality of your data and business information seriously. Any personal or business-related information shared with Web Expertizo during the course of our work will be kept confidential and will only be used for the purpose of fulfilling the services you have requested.</p>
+            <p class="section-content">We will not disclose your confidential information to any third parties without your express permission unless required by law. Your data will be securely stored and only accessed by the authorized personnel working on your project.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-row">
+        <div class="section-col">7. Digital Agreement</div>
+        <div class="section-col-content">
+            <p class="section-content">By placing an order online and making the initial payment, you acknowledge and agree to these terms and conditions. This digital agreement is binding once your order is confirmed and payment is received. You will be required to provide project details, specifications, and any supporting materials to ensure the best outcome for your project.</p>
+            <p class="section-content">Once the initial payment is made, we will begin work immediately. All communications, updates, and approvals will be handled through our online system or via email to ensure efficient and timely progress.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-row">
+        <div class="section-col">8. Contact Information</div>
+        <div class="section-col-content">
+            <p class="section-content">For any questions, concerns, or requests for clarification regarding these terms and conditions, please do not hesitate to contact us. You can reach us via email at info@webexpertizo.com or through our contact page. We strive to respond to all inquiries within 24-48 hours.</p>
+       
+          </div>
+    </div>
+</div>
+<br>
+
+
+
+</div>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!-- jQuery UI CSS -->
+      
+      <div class="bubbles_wrap">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+        <div class="bubble x6"></div>
+        <div class="bubble x7"></div>
+        <div class="bubble x8"></div>
+        <div class="bubble x9"></div>
+        <div class="bubble x10"></div>
+        <div class="bubble x11"></div>
+        <div class="bubble x12"></div>
+        <div class="bubble x13"></div>
+        <div class="bubble x14"></div>
+        <div class="bubble x15"></div>
+        <div class="bubble x16"></div>
+        <div class="bubble x17"></div>
+        <div class="bubble x18"></div>
+        <div class="bubble x19"></div>
+        <div class="bubble x20"></div>
+      </div>
+
+  </main>
+
+
+
+
+
+  <footer id="footer" class="footer dark-background"> 
+<br><br>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+  
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="/" class="logo d-flex align-items-center">
+              <span class="sitename"><img src="assets/img/Web Expertizo.svg" alt=""></span>
+            </a>
+            <p>At Web Expertizo, we deliver customized digital solutions to help businesses enhance their online presence and achieve success through innovative technology and strategies.</p>
+            <div class="social-links d-flex mt-4">
+              <a href="https://x.com/?lang=en"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+              <a href="linkedin.com"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+                <li><i class="bi bi-chevron-right"></i> <a href="/" style="color: black;">Home</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="About-Us" style="color: black;">About Us</a></li>
+                <li><i class="bi bi-chevron-right"></i> 
+                    <a href="#" style="color: black;" data-bs-toggle="dropdown" aria-expanded="false" class="footerDropdownWebExpertizo">
+                        Portfolio 
+                        <i class="bi bi-chevron-down" style="font-size: 0.8rem;"></i> <!-- This adds the dropdown arrow -->
+                    </a>
+                    <ul class="dropdown-menu footerDropdownWebExpertizo-menu" style="background-color: white; color: #004AAD;">
+                        <li><a class="dropdown-item" href="Websites" style="color: black; padding-top: 20px;" >Websites</a></li>
+                        <li><a class="dropdown-item" href="Logos" style="color: black;">Logos</a></li>
+                        <li><a class="dropdown-item" href="Business-Cards" style="color: black;">Business Cards</a></li>
+                        <li><a class="dropdown-item" href="Branding" style="color: black;">Branding</a></li>
+                    </ul>
+                </li>
+                <li><i class="bi bi-chevron-right"></i> <a href="Testimonials" style="color: black;">Testimonials</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="Contact-Us" style="color: black;">Contact Us</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="Terms&Conditions" style="color: black;">Terms & Conditions</a></li>
+            </ul>
+        </div>
+  
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="Custom-Web-Development" style="color: black;"> Custom Web Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="WordPress-Development" style="color: black;"> WordPress Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="Shopify-Store-Development" style="color: black;"> Shopify Store Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="SEO-Optimization" style="color: black;"> SEO Optimization</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="Graphic-Design" style="color: black;"> Graphic Design</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            
+            <!-- Newsletter Form -->
+            <form action="https://api.web3forms.com/submit" class="webexpertizosub" method="POST" onsubmit="submitNewsletter(event)">
+              <input type="hidden" name="access_key" value="bb822da2-13a6-48fd-8fec-4029bc499a8a">
+              
+              <div class="newsletter-form bi" style="border-color: #004AAD;">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <input type="submit" value="Subscribe">
+              </div>
+              
+              <div class="sent-message" style="display:none;">You have successfully subscribed to our newsletter. We will keep you updated!</div>
+            </form>
+            
+            <!-- Popup Modal -->
+            <div id="thankYouModal1" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+              <div style="background:white; padding:20px; border-radius:8px; max-width:400px; text-align:center;">
+                <h2 style="color: black;">Thank You!</h2>
+                <p style="color: black;">You have successfully subscribed to our newsletter. We will keep you updated!</p>
+                <button onclick="closeModal()" style="background-color:#004AAD; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Close</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- JavaScript function to handle form submission and popup -->
+          <script>
+            function submitNewsletter(event) {
+              event.preventDefault(); // Prevent default form submission
+          
+              const form = event.target;
+          
+              // Show the Thank You modal immediately upon form submission
+              document.getElementById('thankYouModal1').style.display = 'flex';
+          
+              // Submit the form data asynchronously
+              fetch(form.action, {
+                method: form.method,
+                body: new FormData(form),
+              }).then(response => {
+                if (response.ok) {
+                  // Clear the form input fields after successful submission
+                  form.reset();
+                } else {
+                  alert('There was a problem submitting your form.');
+                }
+              }).catch(error => {
+                console.error('Error:', error);
+                alert('There was an error submitting your form.');
+              });
+            }
+          
+            // Function to close the Thank You modal
+            function closeModal() {
+              document.getElementById('thankYouModal1').style.display = 'none';
+            }
+          </script>
+          
+          
+  
+        </div>
+      </div>
+    </div>
+  <br>
+    <div class="copyright">
+      <div class="container text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Web Expertizo</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+          Designed by <a href="/">Web Expertizo</a>
+        </div>
+      </div>
+    </div>
+  <br><br>
+  </footer>
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+
+
+  <!-- main hero button -->
+  <script>
+    document.querySelector('.btn-getstarted').addEventListener('mouseenter', function () {
+      this.style.backgroundColor = '004AAD';
+      this.style.color = 'white';
+    });
+
+    document.querySelector('.btn-getstarted').addEventListener('mouseleave', function () {
+      this.style.backgroundColor = '#004AAD';
+      this.style.color = 'white';
+    });
+
+  </script>
+
+  
+
+
+</body>
+
+</html>

@@ -1,0 +1,1908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Professional Web, SEO & Design Services | Web Expertizo
+  </title>
+
+  <meta name="description" content="Web Expertizo offers professional web development, SEO, and graphic design services, specializing in custom websites, WordPress, Shopify, and SEO optimization to help businesses succeed online.">
+<meta name="keywords" content="Web development, SEO services, graphic design, custom websites, WordPress development, Shopify store development, SEO optimization, professional web design, Web Expertizo">
+
+  <!-- Favicons -->
+  <link href="assets/img/fav.svg" rel="icon">
+  <link href="assets/img/fav.svg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+
+
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    @media (max-width: 767.98px) {
+
+      /* Adjust the max-width value as needed for your definition of mobile */
+      #btn-remove {
+        display: none;
+        /* Hides the button */
+      }
+    }
+  </style>
+<style>
+   .bubbles_wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .bubble {
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    bottom: -5px; /* Start slightly off the bottom of the screen */
+  }
+
+  /* Animation Keyframes */
+  @keyframes animateBubble {
+    0% { bottom: -5px; opacity: 0; } /* Start off the bottom of the screen */
+    20% { opacity: 1; } /* Fade in */
+    100% { bottom: 100vh; opacity: 0; } /* Move up off the screen */
+  }
+
+  @keyframes sideWays {
+    0% { margin-left: 0; }
+    100% { margin-left: 25px; }
+  }
+
+  /* Individual Bubbles with Animations from Bottom to Top */
+  .x1 { animation: animateBubble 12s linear infinite, sideWays 5s ease-in-out infinite alternate; left: 6%; background: #004AAD; }
+  .x2 { animation: animateBubble 13s linear infinite, sideWays 6s ease-in-out infinite alternate; left: 12%; background: #FFD700; }
+  .x3 { animation: animateBubble 11s linear infinite, sideWays 5.5s ease-in-out infinite alternate; left: 18%; background: #004AAD; }
+  .x4 { animation: animateBubble 14s linear infinite, sideWays 5.2s ease-in-out infinite alternate; left: 24%; background: #FF6347; }
+  .x5 { animation: animateBubble 12s linear infinite, sideWays 6s ease-in-out infinite alternate; left: 30%; background: #FF69B4; }
+  .x6 { animation: animateBubble 13s linear infinite, sideWays 5s ease-in-out infinite alternate; left: 36%; background: #00FA9A; }
+  .x7 { animation: animateBubble 15s linear infinite, sideWays 6.5s ease-in-out infinite alternate; left: 42%; background: #004AAD; }
+  .x8 { animation: animateBubble 11s linear infinite, sideWays 5.7s ease-in-out infinite alternate; left: 48%; background: #FFA500; }
+  .x9 { animation: animateBubble 14s linear infinite, sideWays 5.8s ease-in-out infinite alternate; left: 54%; background: #8A2BE2; }
+  .x10 { animation: animateBubble 12s linear infinite, sideWays 5.5s ease-in-out infinite alternate; left: 60%; background: white; }
+  .x11 { animation: animateBubble 13s linear infinite, sideWays 6.2s ease-in-out infinite alternate; left: 66%; background: #004AAD; }
+  .x12 { animation: animateBubble 11s linear infinite, sideWays 5.3s ease-in-out infinite alternate; left: 72%; background: #7FFFD4; }
+  .x13 { animation: animateBubble 14s linear infinite, sideWays 6s ease-in-out infinite alternate; left: 78%; background: #FF4500; }
+  .x14 { animation: animateBubble 12s linear infinite, sideWays 5.6s ease-in-out infinite alternate; left: 84%; background: #004AAD; }
+  .x15 { animation: animateBubble 13s linear infinite, sideWays 6.2s ease-in-out infinite alternate; left: 90%; background: #DA70D6; }
+  .x16 { animation: animateBubble 11s linear infinite, sideWays 5.5s ease-in-out infinite alternate; left: 96%; background: #004AAD; }
+  .x17 { animation: animateBubble 15s linear infinite, sideWays 6s ease-in-out infinite alternate; left: 3%; background: #FF1493; }
+  .x18 { animation: animateBubble 12s linear infinite, sideWays 6s ease-in-out infinite alternate; left: 9%; background: #FFD700; }
+  .x19 { animation: animateBubble 14s linear infinite, sideWays 5.5s ease-in-out infinite alternate; left: 15%; background: #00BFFF; }
+  .x20 { animation: animateBubble 13s linear infinite, sideWays 5.7s ease-in-out infinite alternate; left: 21%; background: #FF6347; }
+
+</style>
+
+
+<style>
+  @keyframes blinker {
+    50% { opacity: 0; }
+  }
+</style>
+
+
+
+<style>
+  /* Gradient Animation */
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Wave Text Animation */
+  @keyframes wave {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Image Movement Animation - Adjusted for left/right movement */
+  @keyframes moveImage {
+    0% {
+      transform: translate(-20px, 0); /* Start slightly left */
+    }
+    25% {
+      transform: translate(20px, -5px); /* Move right and up */
+    }
+    50% {
+      transform: translate(0, 0); /* Center position */
+    }
+    75% {
+      transform: translate(-20px, 5px); /* Move left and down */
+    }
+    100% {
+      transform: translate(0, 0); /* Return to center */
+    }
+  }
+
+  /* Web Agency Title */
+  .web-agency-title {
+    position: relative;
+    font-size: 3rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #F3F9FF; /* Swapped color */
+    display: inline-block; /* Ensures the text is inline for the animation */
+    animation: wave 1.5s ease-in-out infinite;
+  }
+
+  /* Wave Background */
+  .wave-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #004AAD, #FFFFFF);
+    opacity: 0.5;
+    overflow: hidden;
+    z-index: 0; /* Ensure it stays behind the text */
+  }
+
+  /* Wave Shape with #F3F9FF Bubbles */
+  .wave-background::before {
+    content: '';
+    position: absolute;
+    width: 200%; /* Double width for seamless animation */
+    height: 150%; /* Increased height to allow full overlap */
+    bottom: -20%; /* Adjusted to position the bubbles off-screen */
+    left: 0; /* Centered position */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><defs><radialGradient id="bubbleGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%"><stop offset="0%" style="stop-color:%23F3F9FF;stop-opacity:0.8"/><stop offset="100%" style="stop-color:%23F3F9FF;stop-opacity:1"/></radialGradient></defs><circle cx="150" cy="100" r="80" fill="url(%23bubbleGrad)" /><circle cx="300" cy="200" r="120" fill="url(%23bubbleGrad)" /><circle cx="450" cy="150" r="90" fill="url(%23bubbleGrad)" /><circle cx="600" cy="250" r="110" fill="url(%23bubbleGrad)" /><circle cx="750" cy="120" r="130" fill="url(%23bubbleGrad)" /><circle cx="900" cy="200" r="150" fill="url(%23bubbleGrad)" /><circle cx="1050" cy="100" r="70" fill="url(%23bubbleGrad)" /><circle cx="1200" cy="240" r="100" fill="url(%23bubbleGrad)" /><circle cx="1350" cy="180" r="110" fill="url(%23bubbleGrad)" /></svg>') repeat;
+    animation: wave 2s linear infinite; /* Animate the wave */
+  }
+
+  /* Moving Image */
+  .moving-image {
+    position: relative;
+    animation: moveImage 2s ease-in-out infinite; /* Adjust duration and timing as needed */
+  }
+
+  /* Bubble Movement Animation */
+  @keyframes moveBubbles {
+    0% {
+      transform: translate(-50%, -50%) translateY(0);
+    }
+    100% {
+      transform: translate(-50%, -50%) translateY(-10px);
+    }
+  }
+
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    /* Adjust the wave background for mobile */
+    .wave-background::before {
+      height: 100%; /* Ensure it covers full height */
+      bottom: 0; /* Align to the bottom */
+    }
+
+    /* Adjust the radius of circles for better fit */
+    .wave-background::before {
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 160"><defs><radialGradient id="bubbleGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%"><stop offset="0%" style="stop-color:%23F3F9FF;stop-opacity:0.8"/><stop offset="100%" style="stop-color:%23F3F9FF;stop-opacity:1"/></radialGradient></defs><circle cx="75" cy="50" r="40" fill="url(%23bubbleGrad)" /><circle cx="150" cy="100" r="60" fill="url(%23bubbleGrad)" /><circle cx="225" cy="75" r="45" fill="url(%23bubbleGrad)" /><circle cx="300" cy="125" r="55" fill="url(%23bubbleGrad)" /><circle cx="375" cy="60" r="65" fill="url(%23bubbleGrad)" /><circle cx="450" cy="100" r="75" fill="url(%23bubbleGrad)" /><circle cx="525" cy="50" r="35" fill="url(%23bubbleGrad)" /><circle cx="600" cy="120" r="50" fill="url(%23bubbleGrad)" /><circle cx="675" cy="90" r="55" fill="url(%23bubbleGrad)" /></svg>') repeat;
+    }
+  }
+</style>
+
+
+
+
+<style>
+  .blinking-text {
+    animation: blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+</style>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/Web Expertizo.svg" alt="Web Expertizo">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="About-Us">About Us</a></li>
+          <li class="dropdown">
+            <a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Custom-Web-Development">Custom Web Development</a></li>
+              <li><a href="WordPress-Development">WordPress Development</a></li>
+              <li><a href="Shopify-Store-Development">Shopify Store Development</a></li>
+              <li><a href="SEO-Optimization">SEO Optimization</a></li>
+              <li><a href="Graphic-Design">Graphic Design</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="dropdown">
+            <a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="websites">websites</a></li>
+              <li><a href="Logos">Logos</a></li>
+              <li><a href="business-cards">Business cards</a></li>
+              <li><a href="Branding">Branding</a></li>
+             
+            </ul>
+          </li>
+
+          <li><a href="Testimonials">Testimonials</a></li>
+          <li><a href="Contact-Us">Contact Us</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+
+      <a href="Contact-Us" class="btn-getstarted" id="btn-remove">
+        <span class="jumping-text">
+          <span class="letter">G</span>
+          <span class="letter">e</span>
+          <span class="letter">t</span>
+          <span class="letter">&nbsp;</span>
+          <span class="letter">S</span>
+          <span class="letter">t</span>
+          <span class="letter">a</span>
+          <span class="letter">r</span>
+          <span class="letter">t</span>
+          <span class="letter">e</span>
+          <span class="letter">d</span>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+<!-- Page Title -->
+<div class="page-title" style="position: relative; overflow: hidden;">
+  <div class="wave-background"></div> <!-- Background Wave Layer -->
+  <div class="container">
+      <h1 class="web-agency-title" style="color: gray;">Testimonials</h1>
+      
+<center>
+  <h5>
+    <b>Proudly serving over 7,000 clients worldwide, each with unique needs and success stories.
+    </b></h5>
+  </center>
+      <nav class="breadcrumbs">
+          <ol>
+              <li><a href="/">Web Expertizo</a></li>
+              <li class="current">Testimonials</li>
+          </ol>
+      </nav>
+  </div>
+</div>
+<!-- End Page Title -->
+
+
+
+
+
+<!-- Testimonial Section -->
+<section id="testimonials" class="testimonials section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4" id="testimonialList">
+            <!-- First 3 Testimonials - Always Visible -->
+            <div class="col-lg-4">
+              <div class="testimonial-card card equal-height">
+                  <div class="card-body">
+                      <p class="card-text">"Web Expertizo transformed my online store with their Shopify expertise. Their team was attentive and delivered results that exceeded my expectations!"</p>
+                      <h5 class="card-title">Fatima Ali</h5>
+                      <span class="card-subtitle mb-2 text-muted">Owner, Online Boutique, Pakistan</span>
+                      <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="col-lg-4">
+              <div class="testimonial-card card equal-height">
+                  <div class="card-body">
+                      <p class="card-text">"Web Expertizo's team took my ideas and turned them into a stunning website. Their expertise in web development is truly commendable!"</p>
+                      <h5 class="card-title">Zain Malik</h5>
+                      <span class="card-subtitle mb-2 text-muted">Entrepreneur, E-commerce, Pakistan</span>
+                      <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="col-lg-4">
+              <div class="testimonial-card card equal-height">
+                  <div class="card-body">
+                      <p class="card-text">"Web Expertizo has been a game changer for my business website. Their attention to user experience is remarkable!"</p>
+                      <h5 class="card-title">Jessica Smith</h5>
+                      <span class="card-subtitle mb-2 text-muted">Business Owner, Retail Industry, UK</span>
+                      <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="col-lg-4">
+              <div class="testimonial-card card equal-height">
+                  <div class="card-body">
+                      <p class="card-text">"The professionalism and quality of work delivered by Web Expertizo were outstanding. They made the process seamless and efficient!"</p>
+                      <h5 class="card-title">Michael Green</h5>
+                      <span class="card-subtitle mb-2 text-muted">Founder, Tech Startup, UK</span>
+                      <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="col-lg-4">
+              <div class="testimonial-card card equal-height">
+                  <div class="card-body">
+                      <p class="card-text">"Thanks to Web Expertizo, my website now reflects the professionalism my clients expect. The team’s expertise truly shows!"</p>
+                      <h5 class="card-title">Ahmed Al-Fahad</h5>
+                      <span class="card-subtitle mb-2 text-muted">CEO, E-commerce Platform, Saudi Arabia</span>
+                      <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="col-lg-4">
+              <div class="testimonial-card card equal-height">
+                  <div class="card-body">
+                      <p class="card-text">"Web Expertizo's SEO services have greatly improved my business visibility. I highly recommend their team!"</p>
+                      <h5 class="card-title">Sara Al-Mutairi</h5>
+                      <span class="card-subtitle mb-2 text-muted">Marketing Manager, Retail Chain, Saudi Arabia</span>
+                      <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                  </div>
+              </div>
+          </div>
+          
+         
+          <div class="col-lg-4">
+            <div class="testimonial-card card equal-height">
+                <div class="card-body">
+                    <p class="card-text">"Web Expertizo built a custom website for my consulting business, perfectly tailored to my brand. Their team was professional, efficient, and went above and beyond to bring my vision to life!"</p>
+                    <h5 class="card-title">Michael Anderson</h5>
+                    <span class="card-subtitle mb-2 text-muted">Founder, Anderson Consulting, USA</span>
+                    <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="testimonial-card card equal-height">
+                <div class="card-body">
+                    <p class="card-text">"Web Expertizo set up our WordPress e-commerce site with all the features we needed for a seamless shopping experience. Our sales have increased, and managing the store has never been easier!"</p>
+                    <h5 class="card-title">Jessica Brown</h5>
+                    <span class="card-subtitle mb-2 text-muted">Owner, Home Essentials, USA</span>
+                    <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="testimonial-card card equal-height">
+                <div class="card-body">
+                    <p class="card-text">"The graphic design services from Web Expertizo transformed our brand’s visual identity. Their designs were fresh, modern, and perfectly captured the essence of our business!"</p>
+                    <h5 class="card-title">Sarah Wilson</h5>
+                    <span class="card-subtitle mb-2 text-muted">Creative Director, Lifestyle Brand, USA</span>
+                    <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            <!-- More testimonials here -->
+
+            <!-- Testimonials hidden by default -->
+         <div class="col-lg-4 d-none additional-testimonial">
+    <div class="testimonial-card card equal-height">
+        <div class="card-body">
+            <p class="card-text">"Web Expertizo revamped our website, making it more user-friendly and visually appealing. Our clients love the new look!"</p>
+            <h5 class="card-title">Ayesha Khan</h5>
+            <span class="card-subtitle mb-2 text-muted">Marketing Manager, Boutique Shop, Pakistan</span>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+    <div class="testimonial-card card equal-height">
+        <div class="card-body">
+            <p class="card-text">"They took our website to the next level with SEO that’s bringing in more visitors than ever before. Highly recommend!"</p>
+            <h5 class="card-title">James Richards</h5>
+            <span class="card-subtitle mb-2 text-muted">Owner, Tech Startup, UK</span>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+    <div class="testimonial-card card equal-height">
+        <div class="card-body">
+            <p class="card-text">"Thanks to Web Expertizo, our website is now fully optimized for mobile users. It’s fast, functional, and looks great!"</p>
+            <h5 class="card-title">Sara Abdullah</h5>
+            <span class="card-subtitle mb-2 text-muted">Blogger, Lifestyle Blog, UAE</span>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+    <div class="testimonial-card card equal-height">
+        <div class="card-body">
+            <p class="card-text">"Our WordPress e-commerce site has transformed our online presence. Web Expertizo’s team is knowledgeable and supportive."</p>
+            <h5 class="card-title">Carlos Diaz</h5>
+            <span class="card-subtitle mb-2 text-muted">Owner, Fashion Outlet, Mexico</span>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+    <div class="testimonial-card card equal-height">
+        <div class="card-body">
+            <p class="card-text">"The graphic design team at Web Expertizo created stunning visuals that perfectly reflect our brand. We’re thrilled with the results!"</p>
+            <h5 class="card-title">Emily Carter</h5>
+            <span class="card-subtitle mb-2 text-muted">Creative Director, Lifestyle Brand, Australia</span>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+    <div class="testimonial-card card equal-height">
+        <div class="card-body">
+            <p class="card-text">"Their custom web development services were exactly what our business needed. Our site is now fast, secure, and user-friendly."</p>
+            <h5 class="card-title">David Kim</h5>
+            <span class="card-subtitle mb-2 text-muted">CEO, FinTech Solutions, South Korea</span>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+    <div class="testimonial-card card equal-height">
+        <div class="card-body">
+            <p class="card-text">"Our traffic increased significantly after Web Expertizo optimized our website’s SEO. Their team truly knows their stuff!"</p>
+            <h5 class="card-title">Lucas Smith</h5>
+            <span class="card-subtitle mb-2 text-muted">Owner, Electronics Store, USA</span>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="col-lg-4 d-none additional-testimonial">
+    <div class="testimonial-card card equal-height">
+        <div class="card-body">
+            <p class="card-text">"They transformed my blog into a sleek, mobile-responsive site. Now, my readers can enjoy content on any device!"</p>
+            <h5 class="card-title">Anna Johnson</h5>
+            <span class="card-subtitle mb-2 text-muted">Blogger, Travel & Adventure, Canada</span>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+    <div class="testimonial-card card equal-height">
+        <div class="card-body">
+            <p class="card-text">"Our non-profit organization now has an engaging website thanks to Web Expertizo. It’s user-friendly and beautiful!"</p>
+            <h5 class="card-title">Ahmed Hassan</h5>
+            <span class="card-subtitle mb-2 text-muted">Director, Helping Hands, Egypt</span>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+    <div class="testimonial-card card equal-height">
+        <div class="card-body">
+            <p class="card-text">"I am impressed with their WordPress expertise. My site is fast, easy to navigate, and my clients love it!"</p>
+            <h5 class="card-title">Sophia Williams</h5>
+            <span class="card-subtitle mb-2 text-muted">Freelancer, Digital Services, USA</span>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+    <div class="testimonial-card card equal-height">
+        <div class="card-body">
+            <p class="card-text">"Web Expertizo's design team perfectly captured our brand's essence. Our new logo and visuals are amazing!"</p>
+            <h5 class="card-title">Katrina Boon</h5>
+            <span class="card-subtitle mb-2 text-muted">Brand Manager, Fashion Store, Malaysia</span>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+    <div class="testimonial-card card equal-height">
+        <div class="card-body">
+            <p class="card-text">"Their SEO services boosted our search rankings and brought in more local clients. We’re very satisfied!"</p>
+            <h5 class="card-title">Richard King</h5>
+            <span class="card-subtitle mb-2 text-muted">Owner, Restaurant, UK</span>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+    <div class="testimonial-card card equal-height">
+        <div class="card-body">
+            <p class="card-text">"My new website looks great and functions perfectly. The Web Expertizo team did an outstanding job!"</p>
+            <h5 class="card-title">Youssef Al-Mansour</h5>
+            <span class="card-subtitle mb-2 text-muted">Business Owner, Riyadh, Saudi Arabia</span>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+    <div class="testimonial-card card equal-height">
+        <div class="card-body">
+            <p class="card-text">"We’re reaching more customers online thanks to their SEO expertise. Web Expertizo is our go-to team!"</p>
+            <h5 class="card-title">Elena Garcia</h5>
+            <span class="card-subtitle mb-2 text-muted">CEO, Organic Foods, Spain</span>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+    <div class="testimonial-card card equal-height">
+        <div class="card-body">
+            <p class="card-text">"The website Web Expertizo developed for my business is stunning, fast, and easy for my customers to use!"</p>
+            <h5 class="card-title">Thabo Ndlovu</h5>
+            <span class="card-subtitle mb-2 text-muted">Owner, EcoTech Solutions, South Africa</span>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+</div>
+
+
+           
+
+
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Web Expertizo’s SEO strategy helped us rank higher on Google. We've seen a big boost in our website traffic!"</p>
+          <h5 class="card-title">Olga Petrov</h5>
+          <span class="card-subtitle mb-2 text-muted">Owner, Health Blog, Russia</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Our online store is now sleek and easy to navigate. Web Expertizo’s Shopify expertise is unmatched!"</p>
+          <h5 class="card-title">Jean-Luc Dupont</h5>
+          <span class="card-subtitle mb-2 text-muted">Owner, Artisanal Crafts, France</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Their team created a stunning WordPress site for our hotel that’s both functional and beautiful. Great work!"</p>
+          <h5 class="card-title">Laura Marini</h5>
+          <span class="card-subtitle mb-2 text-muted">Manager, Beachfront Hotel, Italy</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Web Expertizo’s custom web development helped us scale our e-commerce site efficiently. Very professional team!"</p>
+          <h5 class="card-title">Samuel Johnson</h5>
+          <span class="card-subtitle mb-2 text-muted">CEO, Outdoor Gear, USA</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Thanks to their SEO work, we’re getting more inquiries from clients in our local area. Excellent results!"</p>
+          <h5 class="card-title">Maria Fernandez</h5>
+          <span class="card-subtitle mb-2 text-muted">Owner, Bakery, Spain</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Our website's speed and security have greatly improved. Web Expertizo’s team is knowledgeable and responsive."</p>
+          <h5 class="card-title">Hiroshi Nakamura</h5>
+          <span class="card-subtitle mb-2 text-muted">Founder, Online Education Platform, Japan</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Their graphic design services brought our brand to life. Our customers love the new logo and visuals!"</p>
+          <h5 class="card-title">Sofia Oliveira</h5>
+          <span class="card-subtitle mb-2 text-muted">Owner, Organic Products Store, Brazil</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"The custom web solution Web Expertizo delivered has helped us handle more traffic and offer a better user experience."</p>
+          <h5 class="card-title">David Brown</h5>
+          <span class="card-subtitle mb-2 text-muted">Director, News Portal, Canada</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Our brand’s new website is fast, functional, and beautifully designed. Thanks, Web Expertizo!"</p>
+          <h5 class="card-title">Mehmet Yildiz</h5>
+          <span class="card-subtitle mb-2 text-muted">Owner, Handmade Goods, Turkey</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Their team was responsive and very knowledgeable. Our e-commerce site is now easy to manage and customers love it!"</p>
+          <h5 class="card-title">Lars Jorgensen</h5>
+          <span class="card-subtitle mb-2 text-muted">Owner, Home Decor Store, Denmark</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"With their expert help, we now have a professional and secure website that represents our business perfectly."</p>
+          <h5 class="card-title">Ming Wei</h5>
+          <span class="card-subtitle mb-2 text-muted">Co-founder, Tech Startup, China</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"The redesign has given our website a fresh, modern look, and it's faster than ever. Great work by Web Expertizo!"</p>
+          <h5 class="card-title">Anna Schultz</h5>
+          <span class="card-subtitle mb-2 text-muted">Owner, Fitness Studio, Germany</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Web Expertizo’s graphic design team gave our marketing materials a much-needed makeover. They’re top-notch!"</p>
+          <h5 class="card-title">Jamal Khan</h5>
+          <span class="card-subtitle mb-2 text-muted">CEO, Marketing Agency, UAE</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"We had a fantastic experience with Web Expertizo. Our custom-built website is exactly what we needed."</p>
+          <h5 class="card-title">Rafael Gonzalez</h5>
+          <span class="card-subtitle mb-2 text-muted">Owner, Real Estate Agency, Argentina</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Their expertise in WordPress helped us set up a blog that’s user-friendly and visually appealing. Couldn’t be happier!"</p>
+          <h5 class="card-title">Charlotte Riviere</h5>
+          <span class="card-subtitle mb-2 text-muted">Lifestyle Blogger, France</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Web Expertizo's team helped us build a fast and secure e-commerce site. Our sales have already gone up!"</p>
+          <h5 class="card-title">Wanjiku Mwangi</h5>
+          <span class="card-subtitle mb-2 text-muted">Owner, Fashion Boutique, Kenya</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Thanks to Web Expertizo, our charity’s site is now user-friendly and helps us reach a wider audience."</p>
+          <h5 class="card-title">Amelia Rodriguez</h5>
+          <span class="card-subtitle mb-2 text-muted">Founder, Nonprofit Organization, Mexico</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"We loved working with Web Expertizo. Their graphic designs have added a lot of value to our branding efforts."</p>
+          <h5 class="card-title">Emma Johansson</h5>
+          <span class="card-subtitle mb-2 text-muted">Owner, Handmade Jewelry, Sweden</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Our new website has attracted more clients than ever. I highly recommend Web Expertizo for web development!"</p>
+          <h5 class="card-title">Giuseppe Romano</h5>
+          <span class="card-subtitle mb-2 text-muted">Owner, Consulting Firm, Italy</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"We’re thrilled with the sleek, modern look of our new website. The Web Expertizo team is incredibly talented!"</p>
+          <h5 class="card-title">Carlos Paredes</h5>
+          <span class="card-subtitle mb-2 text-muted">CEO, Travel Agency, Peru</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Web Expertizo transformed our website into a professional platform. We’re already seeing more client inquiries!"</p>
+          <h5 class="card-title">Nina Zoric</h5>
+          <span class="card-subtitle mb-2 text-muted">CEO, Marketing Firm, Croatia</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Thanks to Web Expertizo, our ecommerce site is now fast and functional. Sales have doubled!"</p>
+          <h5 class="card-title">Jessica Kim</h5>
+          <span class="card-subtitle mb-2 text-muted">Founder, Online Boutique, South Korea</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"The custom web solution has been a game-changer for our logistics business. Smooth process from start to finish."</p>
+          <h5 class="card-title">Miguel Lopez</h5>
+          <span class="card-subtitle mb-2 text-muted">COO, Logistics Company, Colombia</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"They crafted an easy-to-navigate website for us. We’re impressed by the professionalism and attention to detail."</p>
+          <h5 class="card-title">Sarah Muller</h5>
+          <span class="card-subtitle mb-2 text-muted">Owner, Wedding Planning, Germany</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Our SEO rankings have improved significantly. Their team knows what they’re doing!"</p>
+          <h5 class="card-title">Ahmed Al-Majed</h5>
+          <span class="card-subtitle mb-2 text-muted">Manager, Electronics Store, Saudi Arabia</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"The user-friendly design they created makes it easy for customers to find our products. Sales have soared!"</p>
+          <h5 class="card-title">Natasha Ivanova</h5>
+          <span class="card-subtitle mb-2 text-muted">CEO, Fashion Retailer, Ukraine</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"We’re thrilled with the logo and brand visuals. They delivered exactly what we envisioned!"</p>
+          <h5 class="card-title">Isabella Clarke</h5>
+          <span class="card-subtitle mb-2 text-muted">Owner, Interior Design Studio, Australia</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Web Expertizo built a multilingual site for us, expanding our reach worldwide. Great investment!"</p>
+          <h5 class="card-title">Stefan Lund</h5>
+          <span class="card-subtitle mb-2 text-muted">Owner, Language School, Sweden</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Our brand identity and site aesthetics were perfectly captured. Highly professional service!"</p>
+          <h5 class="card-title">Amara Chike</h5>
+          <span class="card-subtitle mb-2 text-muted">CEO, Lifestyle Brand, Nigeria</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"They revamped our website to make it mobile-friendly, which has really boosted our traffic. Excellent work!"</p>
+          <h5 class="card-title">Enzo Rossi</h5>
+          <span class="card-subtitle mb-2 text-muted">Owner, Coffee Shop Chain, Argentina</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Our new website is exactly what we needed to attract international clients. Truly satisfied with the results!"</p>
+          <h5 class="card-title">Maryam Haque</h5>
+          <span class="card-subtitle mb-2 text-muted">Consultant, Business Advisory, UAE</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"The SEO enhancements have improved our online visibility, and we’re reaching more customers than before."</p>
+          <h5 class="card-title">Peter Greco</h5>
+          <span class="card-subtitle mb-2 text-muted">Director, Financial Services, USA</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"Our Shopify store is now faster and easier to use. Web Expertizo did an incredible job!"</p>
+          <h5 class="card-title">Hassan Omar</h5>
+          <span class="card-subtitle mb-2 text-muted">Owner, Electronics Store, Egypt</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+<div class="col-lg-4 d-none additional-testimonial">
+  <div class="testimonial-card card equal-height">
+      <div class="card-body">
+          <p class="card-text">"They crafted an excellent website for our NGO. The professionalism and creativity exceeded expectations!"</p>
+          <h5 class="card-title">Ella Armstrong</h5>
+          <span class="card-subtitle mb-2 text-muted">Founder, Animal Welfare NGO, New Zealand</span>
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+            <!-- Repeat for other hidden testimonials -->
+        </div>
+        <!-- Load More Button -->
+        <div class="text-center mt-4">
+            <button id="load-more-testimonials" class="btn btn-secondary" style="background-color: #004AAD; border-radius: 50px; width: 40%;">Load More</button>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript for Load More functionality -->
+<script>
+    const loadMoreButton = document.getElementById('load-more-testimonials');
+    const hiddenTestimonials = document.querySelectorAll('.additional-testimonial');
+    let visibleTestimonials = 0;
+
+    loadMoreButton.addEventListener('click', () => {
+        const testimonialsToShow = 12; // Number of testimonials to reveal on each click
+        let shownTestimonials = 0;
+
+        hiddenTestimonials.forEach((testimonial) => {
+            if (shownTestimonials < testimonialsToShow && testimonial.classList.contains('d-none')) {
+                testimonial.classList.remove('d-none');
+                shownTestimonials++;
+            }
+        });
+
+        visibleTestimonials += shownTestimonials;
+
+        // Hide the Load More button if no more testimonials to show
+        if (visibleTestimonials >= hiddenTestimonials.length) {
+            loadMoreButton.classList.add('d-none');
+        }
+    });
+</script>
+
+
+
+
+
+<hr>
+<!-- User Review Submission Section -->
+<section id="user-reviews" class="user-reviews section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <center> 
+      <h1 class="blinking-text"> Share Your Review</h1>
+      <p class="text-center mb-4" style="font-weight: bold; font-size: 1.1rem; color: #004AAD;">
+        Share your honest feedback and receive a special gift as our thank you for your valuable feedback!
+      </p>
+    </center>
+
+    <form id="reviewForm" action="https://api.web3forms.com/submit" method="POST" class="review-form">
+      <input type="hidden" name="access_key" value="bb822da2-13a6-48fd-8fec-4029bc499a8a">
+      
+      <div class="row g-4">
+        <div class="col-12">
+          <textarea name="reviewText" id="reviewText" class="form-control" rows="3" placeholder="Your Review" required></textarea>
+        </div>
+        <div class="col-md-6">
+          <input type="text" name="reviewerName" id="reviewerName" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" name="reviewerDesignation" id="reviewerDesignation" class="form-control" placeholder="Your Designation" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" name="reviewerBusiness" id="reviewerBusiness" class="form-control" placeholder="Your Business" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" name="reviewerLocation" id="reviewerLocation" class="form-control" placeholder="Your Country" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" name="invoiceNumber" id="invoiceNumber" class="form-control" placeholder="Invoice Number" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" name="reviewerAddress" id="reviewerAddress" class="form-control" placeholder="Your Address" required>
+          <small class="form-text text-muted">
+            Provide your address to receive your surprise gift at your doorstep!
+          </small>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-" style="background-color: #004AAD; border-color: #004AAD; color: white;">Submit Review</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="row" id="testimonialList"></div>
+  </div>
+</section>
+
+<!-- Thank You Modal -->
+<div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="thankYouModalLabel">Thank You!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Your review has been submitted successfully!<br>
+    <br>    <strong>Note:</strong> We will verify your submission with the invoice number and add your review within 24 hours.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-" data-bs-dismiss="modal" style="background-color: #004AAD; color: white;">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Script to handle form submission and thank you modal -->
+<script>
+  document.getElementById("reviewForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // Submit form data using fetch
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: new FormData(this),
+    })
+    .then(response => response.json())
+    .then(result => {
+      if (result.success) {
+        // Show thank you modal
+        const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+        thankYouModal.show();
+
+        // Clear form fields
+        document.getElementById("reviewForm").reset();
+      } else {
+        alert("Submission failed. Please try again.");
+      }
+    })
+    .catch(error => {
+      console.error("Error:", error);
+      alert("There was an error submitting your review. Please try again later.");
+    });
+  });
+</script>
+
+
+<!-- copy2 -->
+
+    <!-- Call To Action 2 Section -->
+    <section id="call-to-action-2" class="call-to-action-2 section dark-background">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Have Questions? Let’s Talk!</h3>
+              <p>Our team is ready to assist you with your digital needs. Schedule a call with us to discuss how we can help elevate your business. Together, we can create tailored solutions that drive results.</p>
+               
+<!-- Request a Call Button -->
+<a class="cta-btn" href="#" data-bs-toggle="modal" data-bs-target="#requestCallModal">Request a Call</a>
+
+</div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action 2 Section -->
+
+
+<!-- Request a Call Modal -->
+<div class="modal fade" id="requestCallModal" tabindex="-1" aria-labelledby="requestCallModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="requestCallModalLabel" style="color: #004AAD;">Request a Call</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: white;"></button>
+      </div>
+      <div class="modal-body">
+        <form id="requestCallForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="bb822da2-13a6-48fd-8fec-4029bc499a8a">
+          <div class="mb-3">
+            <input type="text" class="form-control" name="name" placeholder="Enter your name" required>
+          </div>
+
+          <div class="mb-3">
+            <input type="tel" class="form-control" name="phone" placeholder="Enter number with country code" required>
+          </div>
+          <center>
+            <button type="submit" class="btn btn-primary" style="background-color: #004AAD; border-color: #004AAD;">Submit Request</button>
+          </center>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Thank You Modal for Request a Call -->
+<div id="thankYouModalRequestCall" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+  <div style="background:white; padding:20px; border-radius:8px; max-width:400px; text-align:center;">
+    <h2 style="color: black;">Thank You!</h2>
+    <p style="color: black;">Thank you for your request. We will call you soon!</p>
+    <button onclick="closeThankYouModalRequestCall()" style="background-color:#004AAD; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Close</button>
+  </div>
+</div>
+
+<script>
+  document.getElementById('requestCallForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Show the Thank You modal instantly
+    document.getElementById('thankYouModalRequestCall').style.display = 'flex';
+
+    // Close the Request a Call modal after form submission starts
+    const modal = bootstrap.Modal.getInstance(document.getElementById('requestCallModal'));
+    modal.hide();
+
+    const form = event.target;
+
+    // Submit the form data asynchronously
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+    })
+    .then(response => {
+      if (response.ok) {
+        // Reset the form
+        form.reset();
+      } else {
+        alert('There was a problem submitting your form.');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('There was an error submitting your form.');
+    });
+  });
+
+  // Function to close the Thank You modal for Request a Call
+  function closeThankYouModalRequestCall() {
+    document.getElementById('thankYouModalRequestCall').style.display = 'none';
+  }
+</script>
+
+  
+
+<!-- Faq Section -->
+<section class="faq-9 faq section light-background" id="faq" style="background-color: var(--background-color);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5" data-aos="fade-up">
+        <h2 class="faq-title">Have a question? Check out the FAQ</h2>
+        <p class="faq-description">For inquiries, please contact us at <a href="mailto:info@webexpertizo.com">info@webexpertizo.com</a>.</p>
+      </div>
+
+      <div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
+        <div class="faq-container">
+          <div class="faq-item">
+            <h3>How can I contact customer support?</h3>
+            <div class="faq-content">
+              <p>You can contact our customer support via email at <a href="mailto:info@webexpertizo.com">info@webexpertizo.com</a>.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+         
+
+          <div class="faq-item">
+            <h3>Do you provide support after the project is completed?</h3>
+            <div class="faq-content">
+              <p>Yes, we offer ongoing support and maintenance packages to ensure your website remains up-to-date and runs smoothly after launch.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>What is your approach to SEO optimization?</h3>
+            <div class="faq-content">
+              <p>We use a combination of on-page and off-page SEO strategies, including keyword research, content optimization, link building, and technical SEO to enhance your website’s visibility and drive organic traffic.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>Can you redesign my existing website?</h3>
+            <div class="faq-content">
+              <p>Absolutely! We can help redesign your existing website to improve its functionality, aesthetics, and user experience while aligning it with modern web standards.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>How do you ensure the security of my website?</h3>
+            <div class="faq-content">
+              <p>We implement best practices for website security, including SSL certificates, regular backups, software updates, and secure hosting environments to protect your website from threats.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <!-- New FAQ Item -->
+          <div class="faq-item">
+            <h3>Can you help with digital marketing?</h3>
+            <div class="faq-content">
+              <p>Yes, we offer digital marketing services that include social media management, email marketing, and online advertising to help promote your business effectively.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Faq Section -->
+
+
+
+
+
+
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2 style="color: black;">Testimonials</h2>
+          <p style="color: black;"> Our clients consistently express satisfaction with our services. We pride ourselves on delivering exceptional quality and support, ensuring their online presence thrives in today’s competitive digital landscape.    </p>
+        </div><!-- End Section Title -->
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+      
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Ali Khan</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The team transformed my bakery’s online presence. The beautiful website has brought in many new customers!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Mary Smith</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The attention to detail and creative design made my floral business stand out online. Highly recommended!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Omar Farooq</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The website built by this team has transformed my business, resulting in a remarkable increase in sales!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Akira Tanaka</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The team helped us create a stunning online presence. Our orders have skyrocketed since launching the new site!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Fatima Al-Hassan</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The professionalism and quality of service were top-notch. My crafts business now shines online!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>David Johnson</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The website has improved my visibility and customer engagement tremendously. Highly satisfied!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Sara Hussain</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Thanks to the team's efforts, my bookstore’s online visibility has improved tremendously. User-friendly and visually appealing!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>John Doe</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The quality of the website design and the team's support has been exceptional. I highly recommend their services!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Maria Lopez</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Our online store's performance has greatly improved. The team’s creativity and support are commendable!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+      
+        </div>
+      
+      </section><!-- /Testimonials Section -->
+      
+      <!-- Contact Section -->
+      <section id="contact" class="contact section light-background">
+      
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact Us</h2>
+          <p>We’re here to help you elevate your online presence and achieve your goals.</p>
+        </div><!-- End Section Title -->
+      
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+      
+      
+    <div class="row g-4 g-lg-5">
+      <div class="col-lg-5">
+        <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+            <h3>Contact Info</h3>
+            <p>Your success is our mission. Feel free to reach out to us with any inquiries.</p>
+    
+            <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                    <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                    <h4>Our Location</h4>
+                <p>    Office No 207, Balad Trade Centre, Alamgir Road Bahadurabad, <br> Karachi, Pakistan.
+                </p> </div>
+            </div>
+    
+            <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                    <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                    <h4>Phone Number</h4>
+                    <p>+92 321 2275843</p>
+                </div>
+            </div>
+    
+            <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                    <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                    <h4>Email Address</h4>
+                    <p>info@webexpertizo.com</p>
+                    <p>sales@webexpertizo.com</p>
+                </div>
+            </div>
+    
+            <!-- Separate section for CEO contact details -->
+            <div class="info-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="icon-box">
+                    <i class="bi bi-person-circle"></i>
+                </div>
+                <div class="content">
+                    <h4>CEO & Founder</h4>
+                    <p>Name: M. Rizwan</p>
+                    <p>Phone: +92 333 6623823</p>
+                    <p>Email: rizwan@webexpertizo.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- Submission Modal -->
+<div id="submissionModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+  <div style="background:white; padding:20px; border-radius:8px; max-width:400px; text-align:center;">
+    <h2 style="color: #004AAD;">Thank You!</h2>
+    <p style="color: black;">
+
+      Thank you for your interest. We will get back to you soon!</p>
+    <button onclick="closeSubmissionModal()" style="background-color:#004AAD; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Close</button>
+  </div>
+</div>
+
+<div class="col-lg-7">
+  <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+    <h3>Get In Touch</h3>
+    <p>We'd love to hear from you! Share your ideas, questions, or feedback.</p>
+
+    <form id="rizform" action="https://api.web3forms.com/submit" method="post" class="rizwanemail" data-aos="fade-up" data-aos-delay="200">
+      <input type="hidden" name="access_key" value="bb822da2-13a6-48fd-8fec-4029bc499a8a">
+      <div class="row gy-4">
+        <div class="col-md-6">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="col-12">
+          <input type="text" class="form-control" name="service" placeholder="Service" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn">Send Message</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  document.getElementById('rizform').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Show the Submission modal
+    document.getElementById('submissionModal').style.display = 'flex';
+
+    const form = event.target;
+
+    // Submit the form data asynchronously
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+    })
+    .then(response => {
+      if (response.ok) {
+        // Reset the form after submission
+        form.reset();
+        console.log('Form submitted successfully');
+      } else {
+        alert('There was a problem submitting your form.');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('There was an error submitting your form.');
+    });
+  });
+
+  // Function to close the Submission modal
+  function closeSubmissionModal() {
+    document.getElementById('submissionModal').style.display = 'none';
+  }
+</script>
+
+
+
+      
+
+    </div>
+      
+        </div>
+      
+      </section><!-- /Contact Section -->
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!-- jQuery UI CSS -->
+      
+      <div class="bubbles_wrap">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+        <div class="bubble x6"></div>
+        <div class="bubble x7"></div>
+        <div class="bubble x8"></div>
+        <div class="bubble x9"></div>
+        <div class="bubble x10"></div>
+        <div class="bubble x11"></div>
+        <div class="bubble x12"></div>
+        <div class="bubble x13"></div>
+        <div class="bubble x14"></div>
+        <div class="bubble x15"></div>
+        <div class="bubble x16"></div>
+        <div class="bubble x17"></div>
+        <div class="bubble x18"></div>
+        <div class="bubble x19"></div>
+        <div class="bubble x20"></div>
+      </div>
+
+  </main>
+
+
+
+
+
+  <footer id="footer" class="footer dark-background"> 
+<br><br>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+  
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="/" class="logo d-flex align-items-center">
+              <span class="sitename"><img src="assets/img/Web Expertizo.svg" alt=""></span>
+            </a>
+            <p>At Web Expertizo, we deliver customized digital solutions to help businesses enhance their online presence and achieve success through innovative technology and strategies.</p>
+            <div class="social-links d-flex mt-4">
+              <a href="https://x.com/?lang=en"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+              <a href="linkedin.com"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+                <li><i class="bi bi-chevron-right"></i> <a href="/" style="color: black;">Home</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="About-Us" style="color: black;">About Us</a></li>
+                <li><i class="bi bi-chevron-right"></i> 
+                    <a href="#" style="color: black;" data-bs-toggle="dropdown" aria-expanded="false" class="footerDropdownWebExpertizo">
+                        Portfolio 
+                        <i class="bi bi-chevron-down" style="font-size: 0.8rem;"></i> <!-- This adds the dropdown arrow -->
+                    </a>
+                    <ul class="dropdown-menu footerDropdownWebExpertizo-menu" style="background-color: white; color: #004AAD;">
+                        <li><a class="dropdown-item" href="Websites" style="color: black; padding-top: 20px;" >Websites</a></li>
+                        <li><a class="dropdown-item" href="Logos" style="color: black;">Logos</a></li>
+                        <li><a class="dropdown-item" href="Business-Cards" style="color: black;">Business Cards</a></li>
+                        <li><a class="dropdown-item" href="Branding" style="color: black;">Branding</a></li>
+                    </ul>
+                </li>
+                <li><i class="bi bi-chevron-right"></i> <a href="Testimonials" style="color: black;">Testimonials</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="Contact-Us" style="color: black;">Contact Us</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="Terms&Conditions" style="color: black;">Terms & Conditions</a></li>
+            </ul>
+        </div>
+  
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="Custom-Web-Development" style="color: black;"> Custom Web Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="WordPress-Development" style="color: black;"> WordPress Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="Shopify-Store-Development" style="color: black;"> Shopify Store Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="SEO-Optimization" style="color: black;"> SEO Optimization</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="Graphic-Design" style="color: black;"> Graphic Design</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            
+            <!-- Newsletter Form -->
+            <form action="https://api.web3forms.com/submit" class="webexpertizosub" method="POST" onsubmit="submitNewsletter(event)">
+              <input type="hidden" name="access_key" value="bb822da2-13a6-48fd-8fec-4029bc499a8a">
+              
+              <div class="newsletter-form bi" style="border-color: #004AAD;">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <input type="submit" value="Subscribe">
+              </div>
+              
+              <div class="sent-message" style="display:none;">You have successfully subscribed to our newsletter. We will keep you updated!</div>
+            </form>
+            
+            <!-- Popup Modal -->
+            <div id="thankYouModal1" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+              <div style="background:white; padding:20px; border-radius:8px; max-width:400px; text-align:center;">
+                <h2 style="color: black;">Thank You!</h2>
+                <p style="color: black;">You have successfully subscribed to our newsletter. We will keep you updated!</p>
+                <button onclick="closeModal()" style="background-color:#004AAD; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Close</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- JavaScript function to handle form submission and popup -->
+          <script>
+            function submitNewsletter(event) {
+              event.preventDefault(); // Prevent default form submission
+          
+              const form = event.target;
+          
+              // Show the Thank You modal immediately upon form submission
+              document.getElementById('thankYouModal1').style.display = 'flex';
+          
+              // Submit the form data asynchronously
+              fetch(form.action, {
+                method: form.method,
+                body: new FormData(form),
+              }).then(response => {
+                if (response.ok) {
+                  // Clear the form input fields after successful submission
+                  form.reset();
+                } else {
+                  alert('There was a problem submitting your form.');
+                }
+              }).catch(error => {
+                console.error('Error:', error);
+                alert('There was an error submitting your form.');
+              });
+            }
+          
+            // Function to close the Thank You modal
+            function closeModal() {
+              document.getElementById('thankYouModal1').style.display = 'none';
+            }
+          </script>
+          
+          
+  
+        </div>
+      </div>
+    </div>
+  <br>
+    <div class="copyright">
+      <div class="container text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Web Expertizo</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+          Designed by <a href="/">Web Expertizo</a>
+        </div>
+      </div>
+    </div>
+  <br><br>
+  </footer>
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+
+
+  <!-- main hero button -->
+  <script>
+    document.querySelector('.btn-getstarted').addEventListener('mouseenter', function () {
+      this.style.backgroundColor = '004AAD';
+      this.style.color = 'white';
+    });
+
+    document.querySelector('.btn-getstarted').addEventListener('mouseleave', function () {
+      this.style.backgroundColor = '#004AAD';
+      this.style.color = 'white';
+    });
+
+  </script>
+
+  
+
+
+</body>
+
+</html>

@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Professional Web, SEO & Design Services | Web Expertizo
+  </title>
+
+  <meta name="description" content="Web Expertizo offers professional web development, SEO, and graphic design services, specializing in custom websites, WordPress, Shopify, and SEO optimization to help businesses succeed online.">
+<meta name="keywords" content="Web development, SEO services, graphic design, custom websites, WordPress development, Shopify store development, SEO optimization, professional web design, Web Expertizo">
+
+
+  <!-- Favicons -->
+  <link href="assets/img/fav.svg" rel="icon">
+  <link href="assets/img/fav.svg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+
+
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    @media (max-width: 767.98px) {
+
+      /* Adjust the max-width value as needed for your definition of mobile */
+      #btn-remove {
+        display: none;
+        /* Hides the button */
+      }
+    }
+  </style>
+<style>
+   .bubbles_wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .bubble {
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    bottom: -5px; /* Start slightly off the bottom of the screen */
+  }
+
+  /* Animation Keyframes */
+  @keyframes animateBubble {
+    0% { bottom: -5px; opacity: 0; } /* Start off the bottom of the screen */
+    20% { opacity: 1; } /* Fade in */
+    100% { bottom: 100vh; opacity: 0; } /* Move up off the screen */
+  }
+
+  @keyframes sideWays {
+    0% { margin-left: 0; }
+    100% { margin-left: 25px; }
+  }
+
+  /* Individual Bubbles with Animations from Bottom to Top */
+  .x1 { animation: animateBubble 12s linear infinite, sideWays 5s ease-in-out infinite alternate; left: 6%; background: #004AAD; }
+  .x2 { animation: animateBubble 13s linear infinite, sideWays 6s ease-in-out infinite alternate; left: 12%; background: #FFD700; }
+  .x3 { animation: animateBubble 11s linear infinite, sideWays 5.5s ease-in-out infinite alternate; left: 18%; background: #004AAD; }
+  .x4 { animation: animateBubble 14s linear infinite, sideWays 5.2s ease-in-out infinite alternate; left: 24%; background: #FF6347; }
+  .x5 { animation: animateBubble 12s linear infinite, sideWays 6s ease-in-out infinite alternate; left: 30%; background: #FF69B4; }
+  .x6 { animation: animateBubble 13s linear infinite, sideWays 5s ease-in-out infinite alternate; left: 36%; background: #00FA9A; }
+  .x7 { animation: animateBubble 15s linear infinite, sideWays 6.5s ease-in-out infinite alternate; left: 42%; background: #004AAD; }
+  .x8 { animation: animateBubble 11s linear infinite, sideWays 5.7s ease-in-out infinite alternate; left: 48%; background: #FFA500; }
+  .x9 { animation: animateBubble 14s linear infinite, sideWays 5.8s ease-in-out infinite alternate; left: 54%; background: #8A2BE2; }
+  .x10 { animation: animateBubble 12s linear infinite, sideWays 5.5s ease-in-out infinite alternate; left: 60%; background: white; }
+  .x11 { animation: animateBubble 13s linear infinite, sideWays 6.2s ease-in-out infinite alternate; left: 66%; background: #004AAD; }
+  .x12 { animation: animateBubble 11s linear infinite, sideWays 5.3s ease-in-out infinite alternate; left: 72%; background: #7FFFD4; }
+  .x13 { animation: animateBubble 14s linear infinite, sideWays 6s ease-in-out infinite alternate; left: 78%; background: #FF4500; }
+  .x14 { animation: animateBubble 12s linear infinite, sideWays 5.6s ease-in-out infinite alternate; left: 84%; background: #004AAD; }
+  .x15 { animation: animateBubble 13s linear infinite, sideWays 6.2s ease-in-out infinite alternate; left: 90%; background: #DA70D6; }
+  .x16 { animation: animateBubble 11s linear infinite, sideWays 5.5s ease-in-out infinite alternate; left: 96%; background: #004AAD; }
+  .x17 { animation: animateBubble 15s linear infinite, sideWays 6s ease-in-out infinite alternate; left: 3%; background: #FF1493; }
+  .x18 { animation: animateBubble 12s linear infinite, sideWays 6s ease-in-out infinite alternate; left: 9%; background: #FFD700; }
+  .x19 { animation: animateBubble 14s linear infinite, sideWays 5.5s ease-in-out infinite alternate; left: 15%; background: #00BFFF; }
+  .x20 { animation: animateBubble 13s linear infinite, sideWays 5.7s ease-in-out infinite alternate; left: 21%; background: #FF6347; }
+
+</style>
+
+<style>
+  @keyframes blinker {
+    50% { opacity: 0; }
+  }
+</style>
+
+
+<style>
+  /* Gradient Animation */
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Wave Text Animation */
+  @keyframes wave {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Image Movement Animation - Adjusted for left/right movement */
+  @keyframes moveImage {
+    0% {
+      transform: translate(-20px, 0); /* Start slightly left */
+    }
+    25% {
+      transform: translate(20px, -5px); /* Move right and up */
+    }
+    50% {
+      transform: translate(0, 0); /* Center position */
+    }
+    75% {
+      transform: translate(-20px, 5px); /* Move left and down */
+    }
+    100% {
+      transform: translate(0, 0); /* Return to center */
+    }
+  }
+
+  /* Web Agency Title */
+  .web-agency-title {
+    position: relative;
+    font-size: 3rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #F3F9FF; /* Swapped color */
+    display: inline-block; /* Ensures the text is inline for the animation */
+    animation: wave 1.5s ease-in-out infinite;
+  }
+
+  /* Wave Background */
+  .wave-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #004AAD, #FFFFFF);
+    opacity: 0.5;
+    overflow: hidden;
+    z-index: 0; /* Ensure it stays behind the text */
+  }
+
+  /* Wave Shape with #F3F9FF Bubbles */
+  .wave-background::before {
+    content: '';
+    position: absolute;
+    width: 200%; /* Double width for seamless animation */
+    height: 150%; /* Increased height to allow full overlap */
+    bottom: -20%; /* Adjusted to position the bubbles off-screen */
+    left: 0; /* Centered position */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><defs><radialGradient id="bubbleGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%"><stop offset="0%" style="stop-color:%23F3F9FF;stop-opacity:0.8"/><stop offset="100%" style="stop-color:%23F3F9FF;stop-opacity:1"/></radialGradient></defs><circle cx="150" cy="100" r="80" fill="url(%23bubbleGrad)" /><circle cx="300" cy="200" r="120" fill="url(%23bubbleGrad)" /><circle cx="450" cy="150" r="90" fill="url(%23bubbleGrad)" /><circle cx="600" cy="250" r="110" fill="url(%23bubbleGrad)" /><circle cx="750" cy="120" r="130" fill="url(%23bubbleGrad)" /><circle cx="900" cy="200" r="150" fill="url(%23bubbleGrad)" /><circle cx="1050" cy="100" r="70" fill="url(%23bubbleGrad)" /><circle cx="1200" cy="240" r="100" fill="url(%23bubbleGrad)" /><circle cx="1350" cy="180" r="110" fill="url(%23bubbleGrad)" /></svg>') repeat;
+    animation: wave 2s linear infinite; /* Animate the wave */
+  }
+
+  /* Moving Image */
+  .moving-image {
+    position: relative;
+    animation: moveImage 2s ease-in-out infinite; /* Adjust duration and timing as needed */
+  }
+
+  /* Bubble Movement Animation */
+  @keyframes moveBubbles {
+    0% {
+      transform: translate(-50%, -50%) translateY(0);
+    }
+    100% {
+      transform: translate(-50%, -50%) translateY(-10px);
+    }
+  }
+
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    /* Adjust the wave background for mobile */
+    .wave-background::before {
+      height: 100%; /* Ensure it covers full height */
+      bottom: 0; /* Align to the bottom */
+    }
+
+    /* Adjust the radius of circles for better fit */
+    .wave-background::before {
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 160"><defs><radialGradient id="bubbleGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%"><stop offset="0%" style="stop-color:%23F3F9FF;stop-opacity:0.8"/><stop offset="100%" style="stop-color:%23F3F9FF;stop-opacity:1"/></radialGradient></defs><circle cx="75" cy="50" r="40" fill="url(%23bubbleGrad)" /><circle cx="150" cy="100" r="60" fill="url(%23bubbleGrad)" /><circle cx="225" cy="75" r="45" fill="url(%23bubbleGrad)" /><circle cx="300" cy="125" r="55" fill="url(%23bubbleGrad)" /><circle cx="375" cy="60" r="65" fill="url(%23bubbleGrad)" /><circle cx="450" cy="100" r="75" fill="url(%23bubbleGrad)" /><circle cx="525" cy="50" r="35" fill="url(%23bubbleGrad)" /><circle cx="600" cy="120" r="50" fill="url(%23bubbleGrad)" /><circle cx="675" cy="90" r="55" fill="url(%23bubbleGrad)" /></svg>') repeat;
+    }
+  }
+</style>
+
+
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/Web Expertizo.svg" alt="Web Expertizo">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="About-Us">About Us</a></li>
+          <li class="dropdown">
+            <a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Custom-Web-Development">Custom Web Development</a></li>
+              <li><a href="WordPress-Development">WordPress Development</a></li>
+              <li><a href="Shopify-Store-Development">Shopify Store Development</a></li>
+              <li><a href="SEO-Optimization">SEO Optimization</a></li>
+              <li><a href="Graphic-Design">Graphic Design</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="dropdown">
+            <a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="websites">websites</a></li>
+              <li><a href="Logos">Logos</a></li>
+              <li><a href="business-cards">Business cards</a></li>
+              <li><a href="Branding">Branding</a></li>
+             
+            </ul>
+          </li>
+
+          <li><a href="Testimonials">Testimonials</a></li>
+          <li><a href="Contact-Us">Contact Us</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+
+      <a href="Contact-Us" class="btn-getstarted" id="btn-remove">
+        <span class="jumping-text">
+          <span class="letter">G</span>
+          <span class="letter">e</span>
+          <span class="letter">t</span>
+          <span class="letter">&nbsp;</span>
+          <span class="letter">S</span>
+          <span class="letter">t</span>
+          <span class="letter">a</span>
+          <span class="letter">r</span>
+          <span class="letter">t</span>
+          <span class="letter">e</span>
+          <span class="letter">d</span>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+<!-- Page Title -->
+<div class="page-title" style="position: relative; overflow: hidden;">
+  <div class="wave-background"></div> <!-- Background Wave Layer -->
+  <div class="container">
+      <h1 class="web-agency-title" style="color: gray;">Custom Web Development</h1>
+      
+      <center>
+        <h5>
+          <b>Empowering Your Business with Customized Web Solutions That Elevate Your Online Presence.</b></h5>
+        </center>
+      
+      <nav class="breadcrumbs">
+          <ol>
+              <li><a href="/">Web Expertizo</a></li>
+              <li class="current">Custom Web Development</li>
+          </ol>
+      </nav>
+  </div>
+</div>
+<!-- End Page Title -->
+<!-- Service Details Section -->
+<section id="service-details" class="service-details section">
+
+    <div class="container">
+  
+      <div class="row gy-5">
+  
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="service-box">
+            <h4>Services List</h4>
+            <div class="services-list">
+              <a href="Custom-Web-Development" class="active"><i class="bi bi-arrow-right-circle"></i><span>Custom Web Development</span></a>
+              <a href="WordPress-Development"><i class="bi bi-arrow-right-circle"></i><span>WordPress Development</span></a>
+              <a href="Shopify-Store-Development"><i class="bi bi-arrow-right-circle"></i><span>Shopify Store Development</span></a>
+              <a href="SEO-Optimization"><i class="bi bi-arrow-right-circle"></i><span>SEO Optimization</span></a>
+              <a href="Graphic-Design"><i class="bi bi-arrow-right-circle"></i><span>Graphic Design</span></a>
+            </div>
+          </div><!-- End Services List -->
+  
+          <div class="help-box d-flex flex-column justify-content-center align-items-center">
+            <i class="bi bi-headset help-icon"></i>
+            <h4>Have a Question?</h4>
+            <p class="d-flex align-items-center mt-2 mb-0">
+              <i class="bi bi-telephone me-2"></i>
+              <a href="https://wa.me/923212275843" target="_blank" class="text-decoration-none">
+                +92 321 2275843
+              </a>
+            </p>
+            <p class="d-flex align-items-center mt-1 mb-0">
+              <i class="bi bi-envelope me-2"></i>
+              <a href="mailto:info@webexpertizo.com">info@webexpertizo.com</a>
+            </p>
+          </div>
+          
+  
+        </div>
+        <div class="col-lg-8 ps-lg-5 position-relative" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/img/Custom-WebExpertizo.webp" alt="" class="img-fluid services-img">
+ <!-- Discount Card -->
+<div id="discount-card" class="discount-card position-absolute top-50 end-0 translate-middle-y p-4 shadow rounded" style="transition: all 0.5s ease;" data-aos="zoom-in-up" data-aos-delay="4000">
+  <button onclick="closeCard()" class="close-btn">&times;</button>
+  <br>
+  <h5 class="mb-3 blinker">Save 50% on Premium Services!</h5>
+  
+  <form id="discountForm" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="bb822da2-13a6-48fd-8fec-4029bc499a8a">
+    
+    <div class="mb-3">
+      <input type="text" name="name" class="form-control" placeholder="Name" required>
+    </div>
+    <div class="mb-3">
+      <input type="email" name="email" class="form-control" placeholder="Email" required>
+    </div>
+    <div class="mb-3">
+      <input type="number" name="number" class="form-control" placeholder="Number" required>
+    </div>
+    <div class="mb-3">
+      <textarea name="message" class="form-control" placeholder="Project Details" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn w-100" style="background-color: #004AAD; color: white;">Submit</button>
+  </form>
+</div>
+
+<!-- Loader -->
+<div id="loader" class="discount-card position-absolute top-50 end-0 translate-middle-y p-4 shadow rounded" style="display: none; text-align: center;">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <p>Submitting...</p>
+</div>
+
+<!-- Thank You Message -->
+<div id="thankYouMessage" class="discount-card position-absolute top-50 end-0 translate-middle-y p-4 shadow rounded" style="display: none; text-align: center;">
+  <button onclick="closeThankYouMessage()" class="close-btn">&times;</button>
+  <h5 style="color: #004AAD;" id="thankYouTitle"></h5>
+  <p id="thankYouContent"></p>
+</div>
+
+<script>
+  // Close the discount card with animation
+  function closeCard(){let e=document.getElementById("discount-card");e.style.transform="translate(50px, -100px) scale(0)",e.style.opacity="0",setTimeout(()=>{e.style.display="none"},500)}function closeThankYouMessage(){let e=document.getElementById("thankYouMessage");e.style.transform="translate(50px, -100px) scale(0)",e.style.opacity="0",setTimeout(()=>{e.style.display="none"},500)}document.getElementById("discountForm").addEventListener("submit",async function(e){e.preventDefault();let t=document.getElementById("loader"),n=document.getElementById("thankYouMessage"),a=document.getElementById("discount-card");t.style.display="block",a.style.display="none";try{let l=await fetch(this.action,{method:"POST",body:new FormData(this)}),s=await l.json();if(t.style.display="none",s.success){let o=this.name.value;document.getElementById("thankYouTitle").innerText=`Thank you, ${o}!`,document.getElementById("thankYouContent").innerText="We have received your details. Our team will contact you soon.",n.style.display="block"}else alert("There was an error. Please try again."),a.style.display="block"}catch(y){t.style.display="none",console.error("Error:",y),alert("An error occurred. Please try again."),a.style.display="block"}});
+</script>
+
+
+
+
+<br><br>
+
+
+
+          
+          <h3>Custom Web Development: Tailored Solutions for Your Unique Needs</h3>
+          <p>
+            At Web Expertizo, we believe that every business is unique, and so should be their online presence. Our custom web development services prioritize understanding your specific requirements to deliver solutions that align perfectly with your business goals. Leveraging the latest web technologies, we ensure your website is fast, secure, and adaptable to evolving trends.
+          </p>
+          <ul>
+            <li><i class="bi bi-check-circle"></i> <span>Comprehensive analysis to understand your business needs and objectives.</span></li>
+            <li><i class="bi bi-check-circle"></i> <span>Implementation of modern web technologies to create high-performance, future-ready solutions.</span></li>
+            <li><i class="bi bi-check-circle"></i> <span>Continuous support and maintenance to keep your site running smoothly.</span></li>
+            <li><i class="bi bi-check-circle"></i> <span>SEO-friendly development practices to enhance your online visibility.</span></li>
+            <li><i class="bi bi-check-circle"></i> <span>Responsive design for optimal viewing across all devices.</span></li>
+          </ul>
+          <p>
+            Our team of skilled developers is dedicated to crafting high-quality, robust websites and web applications that seamlessly blend aesthetics with cutting-edge functionality. By focusing on both design and technical excellence, we ensure that your online presence not only impresses but also connects with your target audience effectively.
+          </p>
+          <p>
+            Let us help you build a powerful online platform that truly represents your brand and keeps you ahead in the digital landscape. Contact us today to get started with a modern, impactful website or web application!
+          </p>
+        </div>
+        
+        
+      </div>
+  
+    </div>
+  
+  </section><!-- /Service Details Section -->
+  
+  
+    <!-- Services Section -->
+<section id="services" class="services section light-background">
+
+  
+  
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+      <div class="row g-4">
+  
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card d-flex">
+            <div class="icon flex-shrink-0">
+              <i class="bi bi-braces"></i>
+            </div>
+            <div>
+              <h3>Tailored User Experiences</h3>
+              <p>We focus on creating personalized user journeys that resonate with your audience. Our custom web solutions enhance interaction, making your site intuitive and engaging.</p>
+              
+            </div>
+          </div>
+        </div><!-- End Service Card -->
+  
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card d-flex">
+            <div class="icon flex-shrink-0">
+              <i class="bi bi-paint-bucket"></i>
+            </div>
+            <div>
+              <h3>Stunning Visual Designs</h3>
+              <p>Our design team creates visually appealing websites that capture your brand's essence. We ensure that your site not only looks great but also functions flawlessly.</p>
+              
+            </div>
+          </div>
+        </div><!-- End Service Card -->
+  
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card d-flex">
+            <div class="icon flex-shrink-0">
+              <i class="bi bi-people"></i>
+            </div>
+            <div>
+              <h3>Collaborative Development</h3>
+              <p>We believe in a collaborative approach to development. Our team works closely with you throughout the project, ensuring your vision is realized at every step of the way.</p>
+              
+            </div>
+          </div>
+        </div><!-- End Service Card -->
+  
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-card d-flex">
+            <div class="icon flex-shrink-0">
+              <i class="bi bi-clock-history"></i>
+            </div>
+            <div>
+              <h3>Agile Project Management</h3>
+              <p>Our agile project management methodology allows us to adapt to changes quickly, ensuring your project stays on track and meets evolving business needs without compromising quality.</p>
+              
+            </div>
+          </div>
+        </div><!-- End Service Card -->
+  
+      </div>
+  
+    </div>
+  
+  </section><!-- /Services Section -->
+  
+
+<!-- Features Section -->
+<section id="features" class="features section">
+
+    
+  
+    <div class="container">
+  
+      <div class="d-flex justify-content-center">
+  
+       
+  
+      </div>
+  
+      <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+        <div class="tab-pane fade active show" id="features-tab-1">
+          <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+           
+            
+                Our custom web development services empower businesses to thrive online by crafting tailored solutions that meet your specific needs. We develop websites from scratch, ensuring a perfect fit for your requirements, whether it’s a complex e-commerce platform or a dynamic web application.
+              
+              <p>
+                Our experienced team utilizes the latest technologies and practices to ensure optimal performance, security, and user experience. We focus on creating responsive, user-friendly websites that serve as a solid foundation for your online presence.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> <span>Responsive designs that look great on any device, ensuring accessibility for all users.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Custom solutions developed from the ground up to address your unique business challenges.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Robust security features to protect your data and user information from vulnerabilities.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Scalable solutions that grow with your business, ensuring longevity and adaptability.</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 text-center">
+              <img src="assets/img/custom.webp" alt="" class="img-fluid">
+            </div>
+          </div>
+  
+        
+        </div><!-- End tab content item -->
+  
+  
+        <div class="tab-pane fade" id="features-tab-2">
+          <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+              <h3>WordPress Development</h3>
+              <p class="">
+                Unlock the full potential of WordPress with our tailored development services. We create dynamic and easily manageable websites that cater to your unique requirements.
+              </p>
+              <p>
+                From custom themes to powerful plugin integrations, we ensure that your website not only looks great but also functions seamlessly. Our team provides ongoing support and maintenance, keeping your site updated and secure.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> <span>Custom theme development that aligns perfectly with your brand identity.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Plugin integration to enhance functionality without compromising performance.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Ongoing support and maintenance to keep your site updated and secure against threats.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>SEO-friendly setups to boost your visibility from the start and drive organic traffic.</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 text-center">
+              <img src="assets/img/wordpress.webp" alt="" class="img-fluid">
+            </div>
+          </div>
+          <center>
+            <a href="WordPress-Development" class="btn-r">
+              View More
+          </a></center>
+        </div><!-- End tab content item -->
+  
+        <div class="tab-pane fade" id="features-tab-3">
+          <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+              <h3>Shopify Store Development</h3>
+              <p class="">
+                Start your e-commerce journey with a fully customized Shopify store designed to optimize sales and enhance the user experience.
+              </p>
+              <p>
+                Our Shopify development services include everything from custom theme design to payment gateway setup, ensuring your store is visually appealing and functions flawlessly. We focus on creating a responsive design that guarantees an optimal shopping experience across all devices.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> <span>Custom Shopify theme design that aligns with your brand and engages customers.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Setup and configuration of payment gateways for seamless and secure transactions.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Inventory management solutions to streamline your e-commerce operations and improve efficiency.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Responsive design for an optimal shopping experience on all devices, increasing conversion rates.</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 text-center">
+              <img src="assets/img/shopify.webp" alt="" class="img-fluid">
+            </div>
+          </div>
+          <br>
+          <center>
+            <a href="Shopify-Store-Development" class="btn-r">
+              View More
+          </a></center>
+        </div><!-- End tab content item -->
+  
+        <div class="tab-pane fade" id="features-tab-4">
+          <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+              <h3>SEO Optimization Services</h3>
+              <p class="">
+                Boost your online presence and attract more customers with our expert SEO strategies tailored to your business objectives.
+              </p>
+              <p>
+                Our comprehensive approach includes thorough keyword research, on-page and off-page SEO techniques, and continuous performance tracking to ensure your website remains competitive. We conduct technical SEO audits to optimize your site’s structure, enhancing its visibility in search engine results.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> <span>Comprehensive keyword research to identify the best opportunities for your business.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>On-page and off-page SEO techniques for maximum impact and enhanced rankings.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Performance tracking and continuous optimization to stay ahead of competitors and adapt to algorithm changes.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Technical SEO audits to ensure your website is search engine friendly and easily indexed.</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 text-center">
+              <img src="assets/img/features-illustration-1.webp" alt="" class="img-fluid">
+            </div>
+          </div>
+          <center>
+            <a href="SEO-Optimization" class="btn-r">
+              View More
+          </a></center>
+        </div><!-- End tab content item -->
+  
+        <div class="tab-pane fade" id="features-tab-5">
+          <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+              <h3>Creative Graphic Design Services</h3>
+              <p class="">
+                Our design team crafts visually stunning graphics that effectively communicate your brand's message and values.
+              </p>
+              <p>
+                We provide a wide range of graphic design services, including logo creation, branding materials, and digital illustrations. Our approach combines creativity and strategy, ensuring that every design element contributes to your overall marketing goals.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> <span>Custom logo design that captures your brand's essence and sets you apart from competitors.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Branding materials such as business cards, brochures, and social media graphics that maintain a consistent brand image.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>High-quality digital illustrations tailored to your needs, enhancing your content and engagement.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Design consultations to ensure that all graphics align with your vision and goals.</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 text-center">
+              <img src="assets/img/graphic.webp" alt="" class="img-fluid">
+            </div>
+          </div>
+          <center>
+            <a href="Graphic-Design" class="btn-r">
+              View More
+          </a></center>
+        </div><!-- End tab content item -->
+  
+      </div><!-- End tab content -->
+  
+    </div><!-- End container -->
+  
+  </section><!-- End Features Section -->
+
+
+
+<!-- copy2 -->
+
+    <!-- Call To Action 2 Section -->
+    <section id="call-to-action-2" class="call-to-action-2 section dark-background">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Have Questions? Let’s Talk!</h3>
+              <p>Our team is ready to assist you with your digital needs. Schedule a call with us to discuss how we can help elevate your business. Together, we can create tailored solutions that drive results.</p>
+               
+<!-- Request a Call Button -->
+<a class="cta-btn" href="#" data-bs-toggle="modal" data-bs-target="#requestCallModal">Request a Call</a>
+
+</div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action 2 Section -->
+
+
+<!-- Request a Call Modal -->
+<div class="modal fade" id="requestCallModal" tabindex="-1" aria-labelledby="requestCallModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="requestCallModalLabel" style="color: #004AAD;">Request a Call</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: white;"></button>
+      </div>
+      <div class="modal-body">
+        <form id="requestCallForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="bb822da2-13a6-48fd-8fec-4029bc499a8a">
+          <div class="mb-3">
+            <input type="text" class="form-control" name="name" placeholder="Enter your name" required>
+          </div>
+
+          <div class="mb-3">
+            <input type="tel" class="form-control" name="phone" placeholder="Enter number with country code" required>
+          </div>
+          <center>
+            <button type="submit" class="btn btn-primary" style="background-color: #004AAD; border-color: #004AAD;">Submit Request</button>
+          </center>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Thank You Modal for Request a Call -->
+<div id="thankYouModalRequestCall" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+  <div style="background:white; padding:20px; border-radius:8px; max-width:400px; text-align:center;">
+    <h2 style="color: black;">Thank You!</h2>
+    <p style="color: black;">Thank you for your request. We will call you soon!</p>
+    <button onclick="closeThankYouModalRequestCall()" style="background-color:#004AAD; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Close</button>
+  </div>
+</div>
+
+<script>
+document.getElementById("requestCallForm").addEventListener("submit",function(e){e.preventDefault(),document.getElementById("thankYouModalRequestCall").style.display="flex";let t=bootstrap.Modal.getInstance(document.getElementById("requestCallModal"));t.hide();let l=e.target;fetch(l.action,{method:l.method,body:new FormData(l)}).then(e=>{e.ok?l.reset():alert("There was a problem submitting your form.")}).catch(e=>{console.error("Error:",e),alert("There was an error submitting your form.")})});function closeThankYouModalRequestCall(){document.getElementById("thankYouModalRequestCall").style.display="none"}
+</script>
+
+  
+
+<!-- Faq Section -->
+<section class="faq-9 faq section light-background" id="faq" style="background-color: var(--background-color);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5" data-aos="fade-up">
+        <h2 class="faq-title">Have a question? Check out the FAQ</h2>
+        <p class="faq-description">For inquiries, please contact us at <a href="mailto:info@webexpertizo.com">info@webexpertizo.com</a>.</p>
+      </div>
+
+      <div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
+        <div class="faq-container">
+          <div class="faq-item">
+            <h3>How can I contact customer support?</h3>
+            <div class="faq-content">
+              <p>You can contact our customer support via email at <a href="mailto:info@webexpertizo.com">info@webexpertizo.com</a>.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+         
+
+          <div class="faq-item">
+            <h3>Do you provide support after the project is completed?</h3>
+            <div class="faq-content">
+              <p>Yes, we offer ongoing support and maintenance packages to ensure your website remains up-to-date and runs smoothly after launch.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>What is your approach to SEO optimization?</h3>
+            <div class="faq-content">
+              <p>We use a combination of on-page and off-page SEO strategies, including keyword research, content optimization, link building, and technical SEO to enhance your website’s visibility and drive organic traffic.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>Can you redesign my existing website?</h3>
+            <div class="faq-content">
+              <p>Absolutely! We can help redesign your existing website to improve its functionality, aesthetics, and user experience while aligning it with modern web standards.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>How do you ensure the security of my website?</h3>
+            <div class="faq-content">
+              <p>We implement best practices for website security, including SSL certificates, regular backups, software updates, and secure hosting environments to protect your website from threats.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <!-- New FAQ Item -->
+          <div class="faq-item">
+            <h3>Can you help with digital marketing?</h3>
+            <div class="faq-content">
+              <p>Yes, we offer digital marketing services that include social media management, email marketing, and online advertising to help promote your business effectively.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Faq Section -->
+
+
+
+
+
+
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2 style="color: black;">Testimonials</h2>
+          <p style="color: black;"> Our clients consistently express satisfaction with our services. We pride ourselves on delivering exceptional quality and support, ensuring their online presence thrives in today’s competitive digital landscape.    </p>
+        </div><!-- End Section Title -->
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+      
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Ali Khan</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The team transformed my bakery’s online presence. The beautiful website has brought in many new customers!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Mary Smith</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The attention to detail and creative design made my floral business stand out online. Highly recommended!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Omar Farooq</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The website built by this team has transformed my business, resulting in a remarkable increase in sales!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Akira Tanaka</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The team helped us create a stunning online presence. Our orders have skyrocketed since launching the new site!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Fatima Al-Hassan</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The professionalism and quality of service were top-notch. My crafts business now shines online!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>David Johnson</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The website has improved my visibility and customer engagement tremendously. Highly satisfied!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Sara Hussain</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Thanks to the team's efforts, my bookstore’s online visibility has improved tremendously. User-friendly and visually appealing!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>John Doe</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The quality of the website design and the team's support has been exceptional. I highly recommend their services!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h3>Maria Lopez</h3>
+                 
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Our online store's performance has greatly improved. The team’s creativity and support are commendable!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+      
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+      
+        </div>
+      
+      </section><!-- /Testimonials Section -->
+      
+      <!-- Contact Section -->
+      <section id="contact" class="contact section light-background">
+      
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact Us</h2>
+          <p>We’re here to help you elevate your online presence and achieve your goals.</p>
+        </div><!-- End Section Title -->
+      
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+      
+      
+    <div class="row g-4 g-lg-5">
+      <div class="col-lg-5">
+        <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+            <h3>Contact Info</h3>
+            <p>Your success is our mission. Feel free to reach out to us with any inquiries.</p>
+    
+            <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                    <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                    <h4>Our Location</h4>
+                <p>    Office No 207, Balad Trade Centre, Alamgir Road Bahadurabad, <br> Karachi, Pakistan.
+                </p> </div>
+            </div>
+    
+            <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                    <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                    <h4>Phone Number</h4>
+                    <p>+92 321 2275843</p>
+                </div>
+            </div>
+    
+            <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                    <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                    <h4>Email Address</h4>
+                    <p>info@webexpertizo.com</p>
+                    <p>sales@webexpertizo.com</p>
+                </div>
+            </div>
+    
+            <!-- Separate section for CEO contact details -->
+            <div class="info-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="icon-box">
+                    <i class="bi bi-person-circle"></i>
+                </div>
+                <div class="content">
+                    <h4>CEO & Founder</h4>
+                    <p>Name: M. Rizwan</p>
+                    <p>Phone: +92 333 6623823</p>
+                    <p>Email: rizwan@webexpertizo.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- Submission Modal -->
+<div id="submissionModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+  <div style="background:white; padding:20px; border-radius:8px; max-width:400px; text-align:center;">
+    <h2 style="color: #004AAD;">Thank You!</h2>
+    <p style="color: black;">
+
+      Thank you for your interest. We will get back to you soon!</p>
+    <button onclick="closeSubmissionModal()" style="background-color:#004AAD; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Close</button>
+  </div>
+</div>
+
+<div class="col-lg-7">
+  <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+    <h3>Get In Touch</h3>
+    <p>We'd love to hear from you! Share your ideas, questions, or feedback.</p>
+
+    <form id="rizform" action="https://api.web3forms.com/submit" method="post" class="rizwanemail" data-aos="fade-up" data-aos-delay="200">
+      <input type="hidden" name="access_key" value="bb822da2-13a6-48fd-8fec-4029bc499a8a">
+      <div class="row gy-4">
+        <div class="col-md-6">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="col-12">
+          <input type="text" class="form-control" name="service" placeholder="Service" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn">Send Message</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  document.getElementById("rizform").addEventListener("submit",function(e){e.preventDefault(),document.getElementById("submissionModal").style.display="flex";let t=e.target;fetch(t.action,{method:t.method,body:new FormData(t)}).then(e=>{e.ok?(t.reset(),console.log("Form submitted successfully")):alert("There was a problem submitting your form.")}).catch(e=>{console.error("Error:",e),alert("There was an error submitting your form.")})});function closeSubmissionModal(){document.getElementById("submissionModal").style.display="none"}
+</script>
+
+
+
+      
+
+    </div>
+      
+        </div>
+      
+      </section><!-- /Contact Section -->
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!-- jQuery UI CSS -->
+      
+      <div class="bubbles_wrap">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+        <div class="bubble x6"></div>
+        <div class="bubble x7"></div>
+        <div class="bubble x8"></div>
+        <div class="bubble x9"></div>
+        <div class="bubble x10"></div>
+        <div class="bubble x11"></div>
+        <div class="bubble x12"></div>
+        <div class="bubble x13"></div>
+        <div class="bubble x14"></div>
+        <div class="bubble x15"></div>
+        <div class="bubble x16"></div>
+        <div class="bubble x17"></div>
+        <div class="bubble x18"></div>
+        <div class="bubble x19"></div>
+        <div class="bubble x20"></div>
+      </div>
+
+  </main>
+
+
+
+
+
+  <footer id="footer" class="footer dark-background"> 
+<br><br>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+  
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="/" class="logo d-flex align-items-center">
+              <span class="sitename"><img src="assets/img/Web Expertizo.svg" alt=""></span>
+            </a>
+            <p>At Web Expertizo, we deliver customized digital solutions to help businesses enhance their online presence and achieve success through innovative technology and strategies.</p>
+            <div class="social-links d-flex mt-4">
+              <a href="https://x.com/?lang=en"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+              <a href="linkedin.com"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+  
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+                <li><i class="bi bi-chevron-right"></i> <a href="/" style="color: black;">Home</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="About-Us" style="color: black;">About Us</a></li>
+                <li><i class="bi bi-chevron-right"></i> 
+                    <a href="#" style="color: black;" data-bs-toggle="dropdown" aria-expanded="false" class="footerDropdownWebExpertizo">
+                        Portfolio 
+                        <i class="bi bi-chevron-down" style="font-size: 0.8rem;"></i> <!-- This adds the dropdown arrow -->
+                    </a>
+                    <ul class="dropdown-menu footerDropdownWebExpertizo-menu" style="background-color: white; color: #004AAD;">
+                        <li><a class="dropdown-item" href="Websites" style="color: black; padding-top: 20px;" >Websites</a></li>
+                        <li><a class="dropdown-item" href="Logos" style="color: black;">Logos</a></li>
+                        <li><a class="dropdown-item" href="Business-Cards" style="color: black;">Business Cards</a></li>
+                        <li><a class="dropdown-item" href="Branding" style="color: black;">Branding</a></li>
+                    </ul>
+                </li>
+                <li><i class="bi bi-chevron-right"></i> <a href="Testimonials" style="color: black;">Testimonials</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="Contact-Us" style="color: black;">Contact Us</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="Terms&Conditions" style="color: black;">Terms & Conditions</a></li>
+            </ul>
+        </div>
+  
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="Custom-Web-Development" style="color: black;"> Custom Web Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="WordPress-Development" style="color: black;"> WordPress Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="Shopify-Store-Development" style="color: black;"> Shopify Store Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="SEO-Optimization" style="color: black;"> SEO Optimization</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="Graphic-Design" style="color: black;"> Graphic Design</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            
+            <!-- Newsletter Form -->
+            <form action="https://api.web3forms.com/submit" class="webexpertizosub" method="POST" onsubmit="submitNewsletter(event)">
+              <input type="hidden" name="access_key" value="bb822da2-13a6-48fd-8fec-4029bc499a8a">
+              
+              <div class="newsletter-form bi" style="border-color: #004AAD;">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <input type="submit" value="Subscribe">
+              </div>
+              
+              <div class="sent-message" style="display:none;">You have successfully subscribed to our newsletter. We will keep you updated!</div>
+            </form>
+            
+            <!-- Popup Modal -->
+            <div id="thankYouModal1" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+              <div style="background:white; padding:20px; border-radius:8px; max-width:400px; text-align:center;">
+                <h2 style="color: black;">Thank You!</h2>
+                <p style="color: black;">You have successfully subscribed to our newsletter. We will keep you updated!</p>
+                <button onclick="closeModal()" style="background-color:#004AAD; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Close</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- JavaScript function to handle form submission and popup -->
+          <script>
+          function submitNewsletter(e){e.preventDefault();let t=e.target;document.getElementById("thankYouModal1").style.display="flex",fetch(t.action,{method:t.method,body:new FormData(t)}).then(e=>{e.ok?t.reset():alert("There was a problem submitting your form.")}).catch(e=>{console.error("Error:",e),alert("There was an error submitting your form.")})}function closeModal(){document.getElementById("thankYouModal1").style.display="none"}
+          </script>
+          
+          
+  
+        </div>
+      </div>
+    </div>
+  <br>
+    <div class="copyright">
+      <div class="container text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Web Expertizo</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+          Designed by <a href="/">Web Expertizo</a>
+        </div>
+      </div>
+    </div>
+  <br><br>
+  </footer>
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+
+
+  <!-- main hero button -->
+  <script>
+  document.querySelector(".btn-getstarted").addEventListener("mouseenter",function(){this.style.backgroundColor="004AAD",this.style.color="white"}),document.querySelector(".btn-getstarted").addEventListener("mouseleave",function(){this.style.backgroundColor="#004AAD",this.style.color="white"});
+
+  </script>
+
+  
+
+
+</body>
+
+</html>
